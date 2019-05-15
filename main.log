@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.1)  15 MAY 2019 14:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.1)  15 MAY 2019 17:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -978,16 +978,16 @@ Package epstopdf Info: Source file: <./figures/basicsetup.eps>
 (epstopdf)                    size: 5832 bytes
 (epstopdf)             Command: <repstopdf --outfile=./basicsetup-eps-converted
 -to.pdf ./figures/basicsetup.eps>
-(epstopdf)             \includegraphics on input line 230.
+(epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
-<./basicsetup-eps-converted-to.pdf, id=132, 345.29pt x 266.9975pt>
+<./basicsetup-eps-converted-to.pdf, id=144, 345.29pt x 266.9975pt>
 File: ./basicsetup-eps-converted-to.pdf Graphic file (type pdf)
 <use ./basicsetup-eps-converted-to.pdf>
 Package pdftex.def Info: ./basicsetup-eps-converted-to.pdf  used on input line 
-230.
+235.
 (pdftex.def)             Requested size: 298.11374pt x 230.52187pt.
 
-[3] [4 <./basicsetup-eps-converted-to.pdf>] [5]
+[3] [4 <./basicsetup-eps-converted-to.pdf>] [5] [6]
 Package epstopdf Info: Source file: <./figures/tree.eps>
 (epstopdf)                    date: 2019-05-15 14:53:22
 (epstopdf)                    size: 22932 bytes
@@ -996,14 +996,14 @@ Package epstopdf Info: Source file: <./figures/tree.eps>
 (epstopdf)                    size: 5742 bytes
 (epstopdf)             Command: <repstopdf --outfile=./tree-eps-converted-to.pd
 f ./figures/tree.eps>
-(epstopdf)             \includegraphics on input line 297.
+(epstopdf)             \includegraphics on input line 310.
 Package epstopdf Info: Output file is already uptodate.
-<./tree-eps-converted-to.pdf, id=173, 294.09875pt x 146.5475pt>
+<./tree-eps-converted-to.pdf, id=192, 294.09875pt x 146.5475pt>
 File: ./tree-eps-converted-to.pdf Graphic file (type pdf)
 <use ./tree-eps-converted-to.pdf>
-Package pdftex.def Info: ./tree-eps-converted-to.pdf  used on input line 297.
+Package pdftex.def Info: ./tree-eps-converted-to.pdf  used on input line 310.
 (pdftex.def)             Requested size: 298.11374pt x 148.54845pt.
- [6] [7 <./tree-eps-converted-to.pdf>]
+ [7 <./tree-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./figures/case_A.eps>
 (epstopdf)                    date: 2019-05-15 14:53:22
 (epstopdf)                    size: 26288 bytes
@@ -1012,38 +1012,38 @@ Package epstopdf Info: Source file: <./figures/case_A.eps>
 (epstopdf)                    size: 5922 bytes
 (epstopdf)             Command: <repstopdf --outfile=./case_A-eps-converted-to.
 pdf ./figures/case_A.eps>
-(epstopdf)             \includegraphics on input line 325.
+(epstopdf)             \includegraphics on input line 338.
 Package epstopdf Info: Output file is already uptodate.
-<./case_A-eps-converted-to.pdf, id=194, 345.29pt x 268.00125pt>
+<./case_A-eps-converted-to.pdf, id=206, 345.29pt x 268.00125pt>
 File: ./case_A-eps-converted-to.pdf Graphic file (type pdf)
 <use ./case_A-eps-converted-to.pdf>
-Package pdftex.def Info: ./case_A-eps-converted-to.pdf  used on input line 325.
+Package pdftex.def Info: ./case_A-eps-converted-to.pdf  used on input line 338.
 
 (pdftex.def)             Requested size: 298.11374pt x 231.38849pt.
- [8 <./case_A-eps-converted-to.pdf>] [9] [10] [11] [12] [13] (./main.bbl
+ [8] [9 <./case_A-eps-converted-to.pdf>] [10] [11] [12] [13] (./main.bbl
 Underfull \hbox (badness 2717) in paragraph at lines 51--54
 []\OT1/cmr/bx/n/10.95 Meder, David, Finn Rabe, To-bias Morville, Kristof-fer Ma
 d-sen,
  []
 
 [14]) [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 462.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 462.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 475.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 475.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 462.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 462.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 475.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 475.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6D2F6799546EB4F90E55BBC7100CDEB1;590.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 462.
+(rerunfilecheck)             Checksum: D308D0D097026DF272382D6DA259C27B;797.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 475.
  ) 
 Here is how much of TeX's memory you used:
- 21312 strings out of 492616
- 382447 string characters out of 6132769
- 471667 words of memory out of 5000000
- 24732 multiletter control sequences out of 15000+600000
+ 21318 strings out of 492616
+ 382557 string characters out of 6132769
+ 471660 words of memory out of 5000000
+ 24735 multiletter control sequences out of 15000+600000
  12771 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,51p,1092b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,51p,1101b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2018
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-di
@@ -1057,10 +1057,10 @@ exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2018
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (16 pages, 212294 bytes).
+Output written on main.pdf (16 pages, 214936 bytes).
 PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
- 92 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 334 PDF objects out of 1000 (max. 8388607)
+ 291 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

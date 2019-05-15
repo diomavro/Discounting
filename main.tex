@@ -178,7 +178,7 @@ urlcolor={blue!50!black}}
 \date{\today}
 \maketitle
 \begin{abstract}
-\noindent An important question in economics is how people evaluate payments in the future. The standard phrasing of the problem is in part psychological: the value we attach to a future payment is the dollar value of the payment discounted by a factor whose functional form is determined by our subjective psychology and whose (objective) argument is how long we have to wait for the payment. The functional form is called the ``discounting function'', in practice commonly exponential or hyperbolic. Here we present an interpretation of these forms in terms of growth rates. A payment in the future, we posit, is often viewed as a growth rate of wealth averaged over the time until the payment. Choosing the greatest multiplicative growth rate is mathematically equivalent to exponential discounting, and the additive growth rate is equivalent to hyperbolic discounting. Multiplicative and additive processes are important models for wealth, corresponding approximately to non-earned and earned income. More complicated growth processes result in different discounting functions.
+\noindent An important question in economics is how people evaluate payments in the future. The standard phrasing of the problem is in part psychological: the value we attach to a future payment is the dollar value of the payment discounted by a factor whose functional form is determined by our subjective psychology and whose (objective) argument is how long we have to wait for the payment. The functional form is called the ``discounting function'', in practice commonly exponential or hyperbolic. Here we present an interpretation of these forms in terms of growth rates. A payment in the future, we posit, is often viewed as a growth rate of wealth averaged over the time until the payment. Choosing the greatest multiplicative growth rate is mathematically equivalent to exponential discounting, while maximising the additive growth rate is equivalent to hyperbolic discounting. Multiplicative and additive processes are important models of wealth evolution, corresponding approximately to unearned and earned income. Other growth processes result in different discounting functions.
 \\
 \\
 \noindent\textbf{Keywords: Decision theory, Hyperbolic discounting, Ergodicity economics}
@@ -223,29 +223,33 @@ The paper is organized as follows.~\Sref{model} lays out our model and the basic
 
 \section{Model}\label{sec:model}
 
-Our model consists of a decision maker facing a choice between two options, labelled $a$ and $b$, at time $t_0$. Option $a$ guarantees a fixed and known payout of $\Dx_a$ after time period $\Dt_a$. Option $b$ guarantees a fixed and known payout of $\Dx_b$ after time period $\Dt_b$. We assume that a larger and earlier payout is always preferred, so we confine our attention to cases where $\Dx_b > \Dx_a$ and $\Dt_b > \Dt_a$. We also assume that the decision maker knows his total net wealth at time $t_0$, which we denote by $x\left(t_0\right)$. In general, $x\left(t\right)$ denotes the wealth of the decision maker at time $t$. This setup is illustrated in~\fref{basicsetup}.
+Our model consists of a decision maker at time $t_0$ choosing between two future cash payments, one earlier than the other, whose amounts and payment times are known with certainty. The two options are:
+\begin{enumerate}
+\item[a)] an earlier payment of $\Dx_a$ at time $t_a$; and
+\item[b)] a later payment of $\Dx_b>\Dx_a$ at time $t_b>t_a$.
+\end{enumerate}
+We have confined our attention to $\Dx_b>\Dx_a$ because we assume a larger and earlier payment is trivially always preferred. We also assume that the decision maker knows his net wealth at time $t_0$, which we denote by $x\left(t_0\right)$. In general, $x\left(t\right)$ denotes the net wealth of the decision maker at time $t$. This setup is illustrated in~\fref{basicsetup}.
 
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.75\textwidth]{./figures/basicsetup.eps}
-\caption{The basic setup of the model. A decision maker faces a choice at time $t_0$ between option $a$, which guarantees a payoff of $\Dx_a$ after time period $\Dt_a$, and option $b$, which guarantees a payoff of $\Dx_b$ after time period $\Dt_b$.}
+\caption{The basic setup of the model. A decision maker faces a choice at time $t_0$ between option $a$, which guarantees a payment of $\Dx_a$ at time $t_a$, and option $b$, which guarantees a payment of $\Dx_b>\Dx_a$ at time $t_b>t_a$.}
 \flabel{basicsetup}
 \end{figure}
 
 We note that in this setup there is no uncertainty in the payoffs or in the times in which they are realized. Thus, there is no risk.
 %Because there is no risk, we do not specify a utility function and consider the dollar value of the payoffs.
 
-This setup corresponds to a standard question that arises in the context of temporal discounting, \eg ``would you prefer to receive \$100 tomorrow or \$200 in a month's time?'' Despite its apparent simplicity, answering this question requires additional assumptions. One such assumption concerns the dynamics under which the decision maker's wealth grows. A common assumption is that it grows exponentially, compounding continuously at a risk-free rate like funds in a savings account. Another assumption is the time frame of the decision, specifically whether a decision to accept the earlier payout is treated as playing out over $\Dt_a$ only, or over the full period $\Dt_b$. XXXOP or over some other $\Delta t$? As $\Delta t \to \infty$ all growth rates go to zero, and our framework becomes degenerate (it can't select an optimum). This could be interpreted as the one-shot setup.XXX
-Such assumptions are needed to permit computation of the decision maker's maximand -- in our model, the growth rate of his wealth -- so that the options can be compared quantitatively.
+This setup corresponds to a standard question that arises in the context of temporal discounting, \eg ``would you prefer to receive \$100 tomorrow or \$200 in a month's time?'' Despite its apparent simplicity, answering this question requires additional assumptions. Or, put another way, the problem is underspecified. One extra assumption needed concerns the dynamics under which the decision-maker's wealth grows. Often it is assumed that wealth grows exponentially, compounding continuously at a constant riskless rate like funds in a savings account. Another assumption concerns the time frame of the decision, specifically whether a decision-maker accepting the earlier payment at $t_a$ is free immediately to make his next decision, or whether he must wait until the later time $t_b$ (or, indeed, some other time) before the decision can be repeated. Such assumptions are needed to permit computation of the decision maker's maximand -- in our model, the growth rate of his wealth -- so that the options can be compared quantitatively.
+%XXXOP or over some other $\Delta t$? As $\Delta t \to \infty$ all growth rates go to zero, and our framework becomes degenerate (it can't select an optimum). This could be interpreted as the one-shot setup.XXX
 
-We will describe four different specifications of this basic setup. In each we will calculate the growth rates, $g_a$ and $g_b$, of total wealth associated with options $a$ and $b$. The decision maker compares the two growth rates and prefers the option whose growth rate is larger.
+We will describe four different specifications of this basic setup. In each we will calculate the growth rates, $g_a$ and $g_b$, of wealth associated with options $a$ and $b$. The decision maker prefers the option whose growth rate is larger.
 
-From this comparison can be also inferred the discount factor (\textit{DF}). This is the multiplicative factor, $\delta$, by which the later payout, $\Dx_b$, must be multiplied to equal the earlier payout, $\Dx_a$, when the payout amounts and times are such that the decision maker is indifferent between the two options. In symbols,
+We will also infer the discount factor (\textit{DF}) from this analysis. This is the multiplicative factor, $\delta$, by which the later payout, $\Dx_b$, must be multiplied to equal the earlier payout, $\Dx_a$, when the payout amounts and times are such that the decision maker is indifferent between the two options. In symbols,
 
 \be
-\delta \equiv \frac{\Dx_a}{\Dx_b}
+\delta \equiv \left.\frac{\Dx_a}{\Dx_b}\right|_{g_a=g_b}.
 \ee
-under indifference.
 %To calculate to DF, we evaluate the ratio between the payout $\Dx_a$ and the payout $\Dx_b$ under the assumption that the the growth rates $g_a$ and $g_b$ are equal.
 
 As we show below, this setup predicts decisions equivalent to hyperbolic and exponential discounting under different specifications. Some specifications of the model predict preference reversal. Our model differs from many standard models in the literature by assuming that decision makers maximize the growth rate of their wealth, rather than the expected change in their utility.
@@ -253,7 +257,11 @@ As we show below, this setup predicts decisions equivalent to hyperbolic and exp
 
 \section{Results}\label{sec:results}
 
+\subsection{Specification}
+
 We begin by describing four different specifications for our basic setup. Each specifies two aspects necessary to quantify the growth rate of wealth: the time frame of the decision; and the dynamics under which wealth evolves.
+
+\subsubsection{Time frame}
 
 The time frame is a key aspect, often left unspecified in similar setups in the literature. Consider the following scenarios:
 
@@ -264,9 +272,12 @@ The time frame is a key aspect, often left unspecified in similar setups in the 
 
 In the first scenario, the time frame depends on the choice made. We call this the \textit{elastic} time frame because Dana is more flexible to pursue other opportunities if she chooses the shorter project. On the other hand, if she chooses the longer project, it locks her in a for a longer time period, which means it also changes when she will have another choice.  
 
-In the second scenario, the important element to note is that no matter which choice is made, it will not affect future choices, said otherwise, the time frame is independent of the choice, it is \textit{fixed}. That is, the timing of Nates next choice is not affected by his decision. 
+In the second scenario, the important element to note is that no matter which choice is made, it will not affect future choices, said otherwise, the time frame is independent of the choice, it is \textit{fixed}. That is, the timing of Nate's next choice is not affected by his decision. 
 
-In our model, we must choose the time frame over which the growth rates of wealth in each option are computed. We can choose it to be the time period associated with each payout, \ie $\Dt_a$ for option $a$ and $\Dt_b$ for option $b$. This specification corresponds to Dana's choice, the elastic time frame specification. Or we can choose it always to be the longer time period, $\Dt_b$, resembling Nate's dilemma, the fixed time specification. 
+In our model, we must choose the time period over which the growth rates of wealth in each option are computed. We can choose it to be the time period associated with each payment, \ie $t_a-t_0$ for option $a$ and $t_b-t_0$ for option $b$. This specification corresponds to Dana's situation, the elastic time frame specification. Or we can choose it always to be the longer time period, $t_b-t_0$, resembling Nate's dilemma, the fixed time specification.
+
+For convenience, we denote the two periods between the decision time and the known future payment times as $\Dt_a \equiv t_a-t_0$ and $\Dt_b \equiv t_b-t_0$. Additionally, we denote the known delay between the two payments as $D \equiv t_b-t_a$.
+
 
 %\textcolor{red}{\begin{enumerate}
 %    \item A builder must choose between two jobs starting tomorrow, one paying \$1,000 for a week's work and the other paying \$3,000 for a month's work, with both sums being paid on completion of the work.
@@ -283,12 +294,14 @@ In our model, we must choose the time frame over which the growth rates of wealt
 
 %One possibility is to assume a fixed time frame -- the decision maker faces the choice every $\Dt_b$. In this case, in order to compare between the two choices, we will evaluate the growth rates between $t_0$ and $\Dt_b$ in both options. Another possible specification of time frame, is that the decision maker faces a choice after the payoff is exercised, \ie after $\Dt_a$ if option $a$ was chosen and after $\Dt_b$ if option $b$ was chosen. In this case, we will evaluate the growth rate for option $a$ at time $\Dt_a$, and for option $b$ at $\Dt_b$. The former time frame will be labeled the fixed time frame and the latter the elastic time frame.
 
-The wealth dynamics can also take different forms. A standard assumption would be that wealth grows exponentially in time, assuming a risk-free rate $r$. We label this dynamic as multiplicative. This dynamic corresponds to investing wealth in income-generating assets, in which the income is proportional to the amount invested. This is the dynamic traditionally assumed in temporal discounting, and when present values are calculated for future expected payouts. In this case it is also assumed that the payout itself is re-invested at the risk-free rate.
+\subsubsection{Wealth dynamics}
+
+The wealth dynamics can also take different forms. A standard assumption would be that wealth grows exponentially in time, assuming a risless rate $r$. We label this dynamic as multiplicative. This dynamic corresponds to investing wealth in income-generating assets, in which the income is proportional to the amount invested. This is the dynamic traditionally assumed in temporal discounting, and when present values are calculated for future expected payouts. In this case it is also assumed that the payout itself is re-invested at the risk-free rate.
 
 Another possible form is additive dynamics. Under this dynamic wealth grows linearly in time, with a rate $k$, and it is not invested in income-generating assets. It is equivalent to assuming a flow of wealth at some rate, \ie labor income. In this case, there is essentially no re-investment of the payout -- the income generated by this dynamic is not proportional to wealth as in the multiplicative dynamics.
 %As we will see, this is equivalent to assuming no wealth dynamics, \ie that wealth does not grow in time, apart from the changes that are due to the payouts.
 
-The definition of the wealth growth rate differs for the different dynamics. The growth rate between time $t$ and $t+\Dt$ under additive dynamics is $\frac{x\left(t+\Dt\right)-x\left(t\right)}{\Dt}$ and under multiplicative dynamics it is $\frac{\log x(t+\Dt)-\log x(t)}{\Dt}$, see also~\citep{peters2016evaluating,peters2018time}.
+The definition of the wealth growth rate differs for the different dynamics. The growth rate between time $t+\Dt$ and $t$ under additive dynamics is $\frac{x\left(t+\Dt\right)-x\left(t\right)}{\Dt}$ and under multiplicative dynamics it is $\frac{\log x(t+\Dt)-\log x(t)}{\Dt}$, see also~\citep{peters2016evaluating,peters2018time}.
 
 We will discuss the four specifications, as illustrated in~\fref{tree}. In each case we will: compute the growth rates $g_a$ and $g_b$ associated with each option; compare them to determine the conditions under which each option is preferred; elicit the form of temporal discounting equivalent to our decision model; and, finally, determine whether PR is predicted.
 
