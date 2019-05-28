@@ -159,6 +159,10 @@ urlcolor={blue!50!black}}
 \newcommand{\Sdata}{S^{\text{data}}}
 \newcommand{\Smodel}{S^{\text{model}}}
 
+\newcommand{\del}{D}
+\newcommand{\hor}{H}
+
+
 \setlength{\parindent}{0.0cm}
 \setlength{\parskip}{0.6em}
 
@@ -225,22 +229,24 @@ The paper is organized as follows.~\Sref{model} lays out our model and the basic
 
 Our model consists of a decision maker at time $t_0$ choosing between two future cash payments, one earlier than the other, whose amounts and payment times are known with certainty. The two options are:
 \begin{enumerate}
-\item[a)] an earlier payment of $\Dx_a$ at time $t_a$; and
-\item[b)] a later payment of $\Dx_b>\Dx_a$ at time $t_b>t_a$.
+\item[$a$.] an earlier payment of $\Dx_a>\$ 0$ at time $t_a>t_0$; and
+\item[$b$.] a later payment of $\Dx_b>\Dx_a$ at time $t_b>t_a$.
 \end{enumerate}
 We have confined our attention to $\Dx_b>\Dx_a$ because we assume a larger and earlier payment is trivially always preferred. We also assume that the decision maker knows his net wealth at time $t_0$, which we denote by $x\left(t_0\right)$. In general, $x\left(t\right)$ denotes the net wealth of the decision maker at time $t$. This setup is illustrated in~\fref{basicsetup}.
 
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.75\textwidth]{./figures/basicsetup.eps}
-\caption{The basic setup of the model. A decision maker faces a choice at time $t_0$ between option $a$, which guarantees a payment of $\Dx_a$ at time $t_a$, and option $b$, which guarantees a payment of $\Dx_b>\Dx_a$ at time $t_b>t_a$.}
+\caption{GRAPHIC NEEDS TO CHANGE.
+%The basic setup of the model. A decision maker faces a choice at time $t_0$ between option $a$, which guarantees a payment of $\Dx_a$ at time $t_a$, and option $b$, which guarantees a payment of $\Dx_b>\Dx_a$ at time $t_b>t_a$.
+}
 \flabel{basicsetup}
 \end{figure}
 
 We note that in this setup there is no uncertainty in the payoffs or in the times in which they are realized. Thus, there is no risk.
 %Because there is no risk, we do not specify a utility function and consider the dollar value of the payoffs.
 
-This setup corresponds to a standard question that arises in the context of temporal discounting, \eg ``would you prefer to receive \$100 tomorrow or \$200 in a month's time?'' Despite its apparent simplicity, answering this question requires additional assumptions. Or, put another way, the problem is underspecified. One extra assumption needed concerns the dynamics under which the decision-maker's wealth grows. Often it is assumed that wealth grows exponentially, compounding continuously at a constant riskless rate like funds in a savings account. Another assumption concerns the time frame of the decision, specifically whether a decision-maker accepting the earlier payment at $t_a$ is free immediately to make his next decision, or whether he must wait until the later time $t_b$ (or, indeed, some other time) before the decision can be repeated. Such assumptions are needed to permit computation of the decision maker's maximand -- in our model, the growth rate of his wealth -- so that the options can be compared quantitatively.
+This setup corresponds to a standard question that arises in the context of temporal discounting, \eg ``would you prefer to receive \$100 tomorrow or \$200 in a month's time?'' Despite its apparent simplicity, answering this question requires additional assumptions. Or, put another way, the problem is underspecified. One extra assumption needed concerns the dynamics under which the decision-maker's wealth grows. Often it is assumed that wealth grows exponentially, compounding continuously at a constant riskless rate like funds in a savings account. Another assumption concerns the time frame of the decision, specifically whether a decision-maker accepting the earlier payment at $t_a$ is free immediately to make his next decision, or whether he must wait until the later time $t_b$ (or, indeed, some other time) before the decision can be repeated. Such assumptions are needed to compute decision-maker's maximand -- in our model, the growth rate of his wealth -- so that the options can be compared quantitatively.
 %XXXOP or over some other $\Delta t$? As $\Delta t \to \infty$ all growth rates go to zero, and our framework becomes degenerate (it can't select an optimum). This could be interpreted as the one-shot setup.XXX
 
 We will describe four different specifications of this basic setup. In each we will calculate the growth rates, $g_a$ and $g_b$, of wealth associated with options $a$ and $b$. The decision maker prefers the option whose growth rate is larger.
@@ -248,8 +254,9 @@ We will describe four different specifications of this basic setup. In each we w
 We will also infer the discount factor (\textit{DF}) from this analysis. This is the multiplicative factor, $\delta$, by which the later payout, $\Dx_b$, must be multiplied to equal the earlier payout, $\Dx_a$, when the payout amounts and times are such that the decision maker is indifferent between the two options. In symbols,
 
 \be
-\delta \equiv \left.\frac{\Dx_a}{\Dx_b}\right|_{g_a=g_b}.
+\delta \equiv \left.\frac{\Dx_a}{\Dx_b}\right|_{g_a=g_b},
 \ee
+\ie the ratio of payments under the constraint that the growth rates of wealth are equal.
 %To calculate to DF, we evaluate the ratio between the payout $\Dx_a$ and the payout $\Dx_b$ under the assumption that the the growth rates $g_a$ and $g_b$ are equal.
 
 As we show below, this setup predicts decisions equivalent to hyperbolic and exponential discounting under different specifications. Some specifications of the model predict preference reversal. Our model differs from many standard models in the literature by assuming that decision makers maximize the growth rate of their wealth, rather than the expected change in their utility.
@@ -272,11 +279,12 @@ The time frame is a key aspect, often left unspecified in similar setups in the 
 
 In the first scenario, the time frame depends on the choice made. We call this the \textit{elastic} time frame because Dana is more flexible to pursue other opportunities if she chooses the shorter project. On the other hand, if she chooses the longer project, it locks her in a for a longer time period, which means it also changes when she will have another choice.  
 
-In the second scenario, the important element to note is that no matter which choice is made, it will not affect future choices, said otherwise, the time frame is independent of the choice, it is \textit{fixed}. That is, the timing of Nate's next choice is not affected by his decision. 
+In the second scenario, the important element to note is that no matter which choice is made, it will not affect the timing of future choices. Said otherwise, the time frame is independent of the choice, so we say it is \textit{fixed}.
+%That is, the timing of Nate's next choice is not affected by his decision. 
 
 In our model, we must choose the time period over which the growth rates of wealth in each option are computed. We can choose it to be the time period associated with each payment, \ie $t_a-t_0$ for option $a$ and $t_b-t_0$ for option $b$. This specification corresponds to Dana's situation, the elastic time frame specification. Or we can choose it always to be the longer time period, $t_b-t_0$, resembling Nate's dilemma, the fixed time specification.
 
-For convenience, we denote the two periods between the decision time and the known future payment times as $\Dt_a \equiv t_a-t_0$ and $\Dt_b \equiv t_b-t_0$. Additionally, we denote the known delay between the two payments as $D \equiv t_b-t_a$.
+%For convenience, we denote the two periods between the decision time and the known future payment times as $\Dt_a \equiv t_a-t_0$ and $\Dt_b \equiv t_b-t_0$. Additionally, we denote the known delay between the two payments as $D \equiv t_b-t_a$.
 
 
 %\textcolor{red}{\begin{enumerate}
@@ -296,9 +304,9 @@ For convenience, we denote the two periods between the decision time and the kno
 
 \subsubsection{Wealth dynamics}
 
-The wealth dynamics can also take different forms. A standard assumption would be that wealth grows exponentially in time, assuming a risless rate $r$. We label this dynamic as multiplicative. This dynamic corresponds to investing wealth in income-generating assets, in which the income is proportional to the amount invested. This is the dynamic traditionally assumed in temporal discounting, and when present values are calculated for future expected payouts. In this case it is also assumed that the payout itself is re-invested at the risk-free rate.
+The wealth dynamics can also take different forms. A standard assumption would be that wealth grows exponentially in time, at a riskless rate $r$. We label this dynamic as multiplicative. This dynamic corresponds to investing wealth in income-generating assets, in which the income is proportional to the amount invested. This is the dynamic traditionally assumed in temporal discounting, and when present values are calculated of future expected payouts. In this case it is also assumed that the payout itself is re-invested at the risk-free rate.
 
-Another possible form is additive dynamics. Under this dynamic wealth grows linearly in time, with a rate $k$, and it is not invested in income-generating assets. It is equivalent to assuming a flow of wealth at some rate, \ie labor income. In this case, there is essentially no re-investment of the payout -- the income generated by this dynamic is not proportional to wealth as in the multiplicative dynamics.
+Another possible form is additive dynamics. Under this dynamic wealth grows linearly in time, at a rate $k$, and it is not invested in income-generating assets. It is equivalent to assuming a flow of wealth at some rate, \eg labor income. In this case, there is essentially no re-investment of the payout -- the income generated by this dynamic is not proportional to wealth as in the multiplicative dynamics.
 %As we will see, this is equivalent to assuming no wealth dynamics, \ie that wealth does not grow in time, apart from the changes that are due to the payouts.
 
 The definition of the wealth growth rate differs for the different dynamics. The growth rate between time $t+\Dt$ and $t$ under additive dynamics is $\frac{x\left(t+\Dt\right)-x\left(t\right)}{\Dt}$ and under multiplicative dynamics it is $\frac{\log x(t+\Dt)-\log x(t)}{\Dt}$, see also~\citep{peters2016evaluating,peters2018time}.
@@ -314,126 +322,158 @@ We will discuss the four specifications, as illustrated in~\fref{tree}. In each 
 
 \subsection{Case A -- Elastic time frame with additive dynamics}\label{sec:case_A}
 
-Specification: the time frame for computing the growth rate is time to the chosen payout; and the wealth dynamics are additive (with growth rate $k$). We begin by writing down the final wealth under the two options, evaluated at $t_0+\Dt_a$ and $t_0+\Dt_b$ respectively:
+Specification: the period for computing the growth rate is that between the decision and the chosen payout; and the wealth dynamics are additive, with growth rate $k$.
+
+We begin by writing down the final wealth under the two options, evaluated at $t_a$ and $t_b$ respectively:
 \bea
-x\left(t_0+\Dt_a\right) &= x\left(t_0\right) + \Dx_a + k \Dt_a\,;\\
-x\left(t_0+\Dt_b\right) &= x\left(t_0\right) + \Dx_b + k \Dt_b\,.
+x_a\left(t_a\right) &=& x\left(t_0\right) + \Dx_a + k(t_a-t_0)\,;\\
+x_b\left(t_b\right) &=& x\left(t_0\right) + \Dx_b + k(t_b-t_0)\,.
 \eea
 
 The growth rates are:
 \bea
-g_a &=& \frac{x\left(t_0+\Dt_a\right) - x\left(t_0\right)}{\Dt_a} = \frac{\Dx_a}{\Dt_a} + k\,;\\
-g_b &=& \frac{x\left(t_0+\Dt_b\right) - x\left(t_0\right)}{\Dt_b} = \frac{\Dx_b}{\Dt_b} + k\,.
+g_a &=& \frac{x_a\left(t_a\right) - x\left(t_0\right)}{t_a-t_0} = \frac{\Dx_a}{t_a-t_0} + k\,;\\
+g_b &=& \frac{x_b\left(t_b\right) - x\left(t_0\right)}{t_b-t_0} = \frac{\Dx_b}{t_b-t_0} + k\,.
 \eea
 
 It follows that the criterion $g_a > g_b$ is
 \be
-\frac{\Dx_a}{\Dt_a} > \frac{\Dx_b}{\Dt_b}\,.
+\frac{\Dx_a}{t_a-t_0} > \frac{\Dx_b}{t_b-t_0}\,.
 \ee
 
-This criterion suggests that under this specification, the only thing that matters to the decision maker is the payout rate of each option with respect to the reference point in time, $t_0$. The same payouts would translate into different payout rates for each option with a different reference point in time. This, in turn, would allow for preference reversal. This is illustrated in~\fref{caseA}.
+This criterion suggests that, under this specification, the only thing that matters to the decision maker is the linear payment rate of each option.
+
+If we treat the payment amounts, $\Dx_a$ and $\Dx_b$, and payment times, $t_a$ and $t_b$, as fixed parameters of the problem, then we can elicit the dependence of the decision on the decision time, $t_0$. When the payments are far ahead in the future, \ie as $t_0\to-\infty$, the denominators in the growth rates approach each other and $g_a<g_b$ since we have assumed $\Dx_a<\Dx_b$. When the earlier payment is imminent, \ie as $t_0\to t_a$, $g_a$ grows without bound while $g_b$ remains finite and so $ga>g_b$. In other words, as time passes, our decision model under this specification predicts preference reversal from the later, larger payment to the earlier, smaller payment. This is illustrated in~\fref{caseA}.
 
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.75\textwidth]{./figures/case_A.eps}
-\caption{An illustration of preference reversal in case A. Initially, option $b$ is preferable. It is reflected in the slopes of the blue lines. The solid blue line shows the payout rate of option $b$ and the dashed blue line shows the payout rate of option $a$. Even after some time, option $b$ is still preferable, as reflected by the difference in the slopes of the gray lines (solid for option $b$, dashed for $a$). At some point option $a$ becomes preferable, as the payout rate surpasses that of option $b$. This is demonstrated in the purple line.
-XXXOP something is not right with this figure. I like the different colors for different times. Perhaps let's have one case preferences 1, one case equanimity, one case preferences 2.XXX}
+\caption{GRAPHIC NEEDS TO CHANGE.
+%An illustration of preference reversal in case A. Initially, option $b$ is preferable. It is reflected in the slopes of the blue lines. The solid blue line shows the payout rate of option $b$ and the dashed blue line shows the payout rate of option $a$. Even after some time, option $b$ is still preferable, as reflected by the difference in the slopes of the grey lines (solid for option $b$, dashed for $a$). At some point option $a$ becomes preferable, as the payout rate surpasses that of option $b$. This is demonstrated in the purple line.
+XXXOP something is not right with this figure. I like the different colors for different times. Perhaps let's have one case preferences 1, one case equanimity, one case preferences 2.XXX
+}
 \flabel{caseA}
 \end{figure}
 
-It shows that the payout rate of option $b$ is higher than that of option $a$, which makes it preferable. This holds for some time. However, at some point in time, this changes and the payout rate of option $a$ would be higher. Assuming that initially option $g_b > g_a$, there will always be a point in time in which PR will occur. If time $\tau$ elapsed from $t_0$, than the updated payout rates of options $a$ and $b$ are $\frac{\Dx_a}{\Dt_a - \tau}$ and $\frac{\Dx_b}{\Dt_b - \tau}$, respectively. The reversal will occur when these are equal, or
+%It shows that the payout rate of option $b$ is higher than that of option $a$, which makes it preferable. This holds for some time. However, at some point in time, this changes and the payout rate of option $a$ would be higher. Assuming that initially option $g_b > g_a$, there will always be a point in time in which PR will occur. If time $\tau$ elapsed from $t_0$, than the updated payout rates of options $a$ and $b$ are $\frac{\Dx_a}{\Dt_a - \tau}$ and $\frac{\Dx_b}{\Dt_b - \tau}$, respectively. The reversal will occur when these are equal, or
+%\be
+%\tau_{\text{reversal}} = \frac{\Dt_a\Dx_b - \Dt_b\Dx_a}{\Dx_b - \Dx_a}\,.
+%\ee
+
+We can compute the decision time, $t_0^\text{PR}$, at which preference reversal occurs by setting $g_a=g_b$ to give
 \be
-\tau_{\text{reversal}} = \frac{\Dt_a\Dx_b - \Dt_b\Dx_a}{\Dx_b - \Dx_a}\,.
+t_0^\text{PR} = \frac{\Dx_b t_a - \Dx_a t_b}{\Dx_b - \Dx_a}.
 \ee
 
-This case not only demonstrates PR, but also hyperbolic discounting, \ie that the discount factor changes hyperbolically in time.
-
-The discount factor, $\delta$, is the factor by which the later payout, $\Dx_b$, must be multiplied to equal the earlier payout, $\Dx_a$, under indifference between options $a$ and $b$. Practically, it can be found by considering the equality of growth rates $g_a$ and $g_b$, which is the condition for indifference. $\delta$ is typically presented as a function of the time difference between options. In our setup this would be $\Epsilon \equiv \Dt_b - \Dt_a$.
-
-\textcolor{red}{
-Now that we have the hyperbolic DF in terms of the delay, $\Dt_b-\Dt_a$, and the time to the first payout, $\Dt_a$, as
+We can also find the effective discount factor under this specification. When $g_a=g_b$, we have
 \be
-\delta = \frac{1}{1+\frac{\Dt_b-\Dt_a}{\Dt_a}} = \frac{1}{1+kD},
+\delta = \frac{\Dx_a}{\Dx_b} = \frac{t_a-t_0}{t_b-t_0} = \frac{1}{1+\frac{t_b-t_a}{t_a-t_0}},
 \ee
-it would be much clearer to present PR as a consequence of changing the time to the first payout rather than the reference time. Then $t_0\to t_0+\Dt_a$ is simply $\Dt_a\to0$, which is also expressible as $k\to\infty$. This minor reframing will require some changes below, including to the figure, because we would treat $t_0$ as fixed and $\Dt_a$ as movable.
-}
-\textcolor{red}{
-Do we need $\Epsilon$? The letter has no intuitive meaning (to me) and perhaps we can get away without relabelling $\Dt_b-\Dt_a$. If not, $D$ for delay or $W$ for wait might be better.
-}
-XXXOP: not sure -- I like the physical time $t_0$ changing. What happens in real life is that time ticks on and we get swept towards $t_a$, it's not that we sit still in time, and someone tunes $t_a$. Agree about $\Epsilon$ -- better letter?XXX
-
-
-In case A we therefore get
+where we have made the final manipulation to express $\delta$ in hyperbolic form. We see that the discount factor depends on two time periods: that between decision and the earlier payment, $t_a-t_0$, which we will call the \textit{horizon}; and that between the two payments, $t_b-t_a$, which we which we will call the \textit{delay}.\footnote{Indeed, the problem is fully specified by these two time periods and the two payment amounts. The actual times, $t_0$, $t_a$, $t_b$, are not needed to specify the problem because, when computing growth rates, only elapsed times matter. The time origin is arbitrary.} If we define $\hor\equiv t_a-t_0$ and $\del\equiv t_b-t_a$, we can write the discount factor as
 \be
-\delta_A = \frac{\Dx_a}{\Dx_b} = \frac{\Dt_a}{\Dt_b} = \frac{1}{1+\frac{1}{\Dt_a} \Epsilon}\,.
+\delta = \frac{1}{1+\del/\hor},
 \ee
+which is expressed in the conventional way as a hyperbolic function of the delay, $\del$. The psychological degree of discounting parameter used in mainstream models is replaced here by $1/\hor$, the reciprocal of the horizon. As the horizon gets shorter, $1/\hor$ becomes larger, $\delta$ gets smaller, and the later payment becomes less favourable. No knowledge of the decision-maker's psychology is required in this setup, other than that he prefers his wealth to grow faster.
 
-This is exactly hyperbolic discounting with degree of discounting $\kappa = \frac{1}{\Dt_a}$.
+%The discount factor, $\delta$, is the factor by which the later payout, $\Dx_b$, must be multiplied to equal the earlier payout, $\Dx_a$, under indifference between options $a$ and $b$. Practically, it can be found by considering the equality of growth rates $g_a$ and $g_b$, which is the condition for indifference. $\delta$ is typically presented as a function of the time difference between options. In our setup this would be $\Epsilon \equiv \Dt_b - \Dt_a$.
+%
+%\textcolor{red}{
+%Now that we have the hyperbolic DF in terms of the delay, $\Dt_b-\Dt_a$, and the time to the first payout, $\Dt_a$, as
+%\be
+%\delta = \frac{1}{1+\frac{\Dt_b-\Dt_a}{\Dt_a}} = \frac{1}{1+kD},
+%\ee
+%it would be much clearer to present PR as a consequence of changing the time to the first payout rather than the reference time. Then $t_0\to t_0+\Dt_a$ is simply $\Dt_a\to0$, which is also expressible as $k\to\infty$. This minor reframing will require some changes below, including to the figure, because we would treat $t_0$ as fixed and $\Dt_a$ as movable.
+%}
+%\textcolor{red}{
+%Do we need $\Epsilon$? The letter has no intuitive meaning (to me) and perhaps we can get away without relabelling $\Dt_b-\Dt_a$. If not, $D$ for delay or $W$ for wait might be better.
+%}
+%XXXOP: not sure -- I like the physical time $t_0$ changing. What happens in real life is that time ticks on and we get swept towards $t_a$, it's not that we sit still in time, and someone tunes $t_a$. Agree about $\Epsilon$ -- better letter?XXX
+%
+%
+%In case A we therefore get
+%\be
+%\delta_A = \frac{\Dx_a}{\Dx_b} = \frac{\Dt_a}{\Dt_b} = \frac{1}{1+\frac{1}{\Dt_a} \Epsilon}\,.
+%\ee
+%
+%This is exactly hyperbolic discounting with degree of discounting $\kappa = \frac{1}{\Dt_a}$.
 
-We note also that, under additive dynamics, the background growth rate, $k$, of the decision maker's wealth does not appear in the decision criterion. This is because wealth growth under additive dynamics is not affected by exogenous cash flows: the gain $k\Dt$ over period $\Dt$ occurs regardless of what else happens. This contrasts with multiplicative dynamics, where early cash flows can be reinvested to increase gains from growth.
+Finally, we note that the background growth rate, $k$, of the decision-maker's wealth does not appear in the decision criterion. This is because wealth growth under additive dynamics is not affected by exogenous cash flows: the gain $k\Dt$ over period $\Dt$ occurs regardless of other payments received. This contrasts with multiplicative dynamics, where payments can be subjected to the growth process through re-investment.
 
 \subsection{Case B -- Elastic time frame with multiplicative dynamics}\label{sec:case_B}
 
-Specification: the time frame for computing the growth rate is time to the chosen payout; and the wealth dynamics are multiplicative (with growth rate $r$). We follow the same steps as in case A. Wealth evolves to:
+Specification: the time frame for computing the growth rate is time to the chosen payment; and the wealth dynamics are multiplicative, with growth rate $r$.
+
+We follow the same steps as in case A. Wealth evolves to:
 \bea
-x\left(t_0+\Dt_a\right) &= x\left(t_0\right) e^{r \Dt_a} + \Dx_a\\
-x\left(t_0+\Dt_b\right) &= x\left(t_0\right) e^{r \Dt_b} + \Dx_b\,.
+x_a\left(t_a\right) &=& x\left(t_0\right) e^{r(t_a-t_0)} + \Dx_a\,;\\
+x_b\left(t_b\right) &=& x\left(t_0\right) e^{r(t_b-t_0)} + \Dx_b\,.
 \eea
 
 The corresponding growth rates are:
 \bea
-g_a &= \frac{1}{\Dt_a} \log{\left(\frac{x\left(t_0+\Dt_a\right)}{x\left(t_0\right)}\right)} = \frac{1}{\Dt_a}\log{\left(e^{r \Dt_a} + \frac{\Dx_a}{x\left(t_0\right)}\right)}\\
-g_b &= \frac{1}{\Dt_b} \log{\left(\frac{x\left(t_0+\Dt_b\right)}{x\left(t_0\right)}\right)} = \frac{1}{\Dt_b}\log{\left(e^{r \Dt_b} + \frac{\Dx_b}{x\left(t_0\right)}\right)}\,.
+g_a &= \frac{1}{t_a-t_0} \log{\left(\frac{x_a\left(t_a\right)}{x\left(t_0\right)}\right)} = \frac{1}{t_a-t_0}\log{\left(1 + \frac{\Dx_a}{x\left(t_0\right)e^{r(t_a-t_0)}}\right)} + r\\
+g_b &= \frac{1}{t_b-t_0} \log{\left(\frac{x_b\left(t_b\right)}{x\left(t_0\right)}\right)} = \frac{1}{t_b-t_0}\log{\left(1 + \frac{\Dx_b}{x\left(t_0\right)e^{r(t_b-t_0)}}\right)} + r\,.
 \eea
 
-This setting also displays PR, although no closed-form expression for $\tau_{\text{reversal}}$ can be derived like in case A. It is clear that PR occurs, since when $\tau$ approaches $t_0+\Dt_a$, $g_a$ will increase indefinitely, while $\log{\left(e^{r \Dt_a} + \frac{\Dx_a}{x\left(t_0\right)}\right)}$ remains positive.
+This setting displays preference reversal: $g_a<g_b$ for $t_0$ sufficienly large and negative (long horizon); and $g_a>g_b$ for $t_0$ sufficiently close to $t_a$ (short horizon). No closed-form expression for the reversal time, $t_0^\text{PR}$, is available.
 
-Similarly, the discount factor $\delta_B$ cannot be derived explicitly without approximations. Yet, we could assume that $\Dx_a \ll x\left(t_0\right)e^{r \Dt_a}$ and $\Dx_b \ll x\left(t_0\right)e^{r \Dt_b}$, \ie that the payouts are much smaller than the wealth at the time the payouts are realized. Then, using the first order expansion $\log\left(x+\delta\right) \approx \log\left(x\right) + \delta/x$, we obtain
-
+Similarly, the discount factor $\delta$ cannot be derived explicitly. However, if we assume small payments relative to wealth, \ie $\Dx_a \ll x\left(t_0\right)e^{r(t_a-t_0)}$ and $\Dx_b \ll x\left(t_0\right)e^{r(t_b-t_0)}$, then, setting $g_a=g_b$ and using the first-order approximation $\log(1+\epsilon)\approx\epsilon$ for $\epsilon\ll1$, we get
 \be
-\delta_B = \frac{\Dx_a}{\Dx_b} \approx \frac{\Dt_a}{\Dt_b} \cdot e^{-r \left(\Dt_b - \Dt_a\right)} = \frac{1}{1+\frac{1}{\Dt_a} \Epsilon}e^{-r\Epsilon}\,,
+\delta = \frac{\Dx_a}{\Dx_b} \approx \frac{(t_a-t_0)e^{r(t_a-t_0)}}{(t_b-t_0)e^{r(t_b-t_0)}} =
+\frac{e^{r(t_a-t_b)}}{1+\frac{t_b-t_a}{t_a-t_0}}\,.
 \ee
-
-which is a mixed case of hyperbolic and exponential discounting.
+Using the previous definitions of $\hor$ and $\del$, we can write this as
+\be
+\delta \approx \frac{e^{-r\del}}{1+\del/\hor}\,,
+\ee
+which is a hybrid of hyperbolic and exponential discounting. We note again that only the elapsed times, $\hor$ and $\del$, appear in the discount factor. However, that the background wealth growth rate, $r$, no longer cancels out when dynamics are multiplicative, as does $k$ when they are additive.
 
 \subsection{Case C -- Fixed time frame with additive dynamics}\label{sec:case_C}
 
-Now we assume additive dynamics again, but with a fixed time frame -- the outcomes of both choices are compared at $\Dt_b$. The growth rate of option $b$ would be the same as in case A, since it was already evaluated at $t_0+\Dt_b$. In this case, option $a$ leads to
-\be
-x\left(t_0+\Dt_b\right) = x\left(t_0\right) + \Dx_a + k \Dt_b\,,
-\ee
+Now we assume additive dynamics as in case A, but with a fixed time frame so that the outcomes of both choices are compared at $t_b$. The wealths evolve to: \bea
+x_a\left(t_b\right) &=& x\left(t_0\right) + \Dx_a + k(t_b-t_0)\,; \\
+x_b\left(t_b\right) &=& x\left(t_0\right) + \Dx_b + k(t_b-t_0)\,.
+\eea
+The growth rates are:
+\bea
+g_a &=& \frac{x_a\left(t_b\right) - x\left(t_0\right)}{t_b-t_0} = \frac{\Dx_a}{t_b-t_0} + k\,;\\
+g_b &=& \frac{x_b\left(t_b\right) - x\left(t_0\right)}{t_b-t_0} = \frac{\Dx_b}{t_b-t_0} + k\,.
+\eea
+Note that the wealth and its growth rate under option $b$ are the same as in case A, since they were already evaluated at $t_b$ there.
 
-and the corresponding growth rate would be
-\be
-g_a = \frac{1}{\Dt_b}\left(x\left(t_0+\Dt_b\right) - x\left(t_0\right)\right) = \frac{\Dx_a}{\Dt_b} + k\,.
-\ee
-
-Recall that $g_b = \frac{\Dx_b}{\Dt_b} + k$. Since we have assumed $\Dx_b > \Dx_a$, it is clear that option $b$ would always be preferable to option $a$. This is a trivial case -- assuming additive dynamics (or no dynamics) the only thing that matters is the payout size, if we compare the options at the same time, or if they repeat at fixed time windows. In this case, the discount factor $\delta_C$ cannot be defined, since the larger final payout is always preferred and the indifference condition cannot be satisfied.
+Since we have assumed $\Dx_b > \Dx_a$, option $b$ is always preferred to option $a$. This is a trivial case -- if we assume additive wealth dynamics (or no dynamics) and comparing the growth rates at the same time (or assuming repetition over fixed periods), then the only thing that matters to the decision-maker is payout size. In this case, the discount factor $\delta$ cannot be defined, since the later, larger payout is always preferred and the indifference condition is never satisfied.
 
 \subsection{Case D -- Fixed time frame with multiplicative dynamics}\label{sec:case_D}
 
 Finally, we assume multiplicative dynamics and a fixed time frame. This is the specification that corresponds to the standard assumptions usually considered in temporal discounting -- that wealth is continuously compounding at the risk-free rate and that payouts are re-invested at this rate.
 
-The growth rate of option $b$ would be the same as in case B, since it was already evaluated at $t_0+\Dt_b$ ($g_b = \frac{1}{\Dt_b}\log{\left(e^{r \Dt_b} + \frac{\Dx_b}{x\left(t_0\right)}\right)}$). In this case, option $a$ leads to
+The chief difference from case B is that the earlier payment, $\Dx_a$, if chosen, is treated as growing exponentially from $t_a$ to $t_b$. The wealths evolve from $t_0$ to $t_b$ as follows:
+\bea
+x_a\left(t_b\right) &=& x\left(t_0\right) e^{r(t_b-t_0)} + \Dx_a e^{r(t_b-t_a)}\,;\\
+x_b\left(t_b\right) &=& x\left(t_0\right) e^{r(t_b-t_0)} + \Dx_b\,.
+\eea
+The corresponding growth rates are:
+\bea
+g_a &= \frac{1}{t_a-t_0} \log{\left(\frac{x_a\left(t_a\right)}{x\left(t_0\right)}\right)} = \frac{1}{t_b-t_0}\log{\left(1 + \frac{\Dx_a e^{r(t_b-t_a)}}{x\left(t_0\right)e^{r(t_b-t_0)}}\right)} + r\\
+g_b &= \frac{1}{t_b-t_0} \log{\left(\frac{x_b\left(t_b\right)}{x\left(t_0\right)}\right)} = \frac{1}{t_b-t_0}\log{\left(1 + \frac{\Dx_b}{x\left(t_0\right)e^{r(t_b-t_0)}}\right)} + r\,.
+\eea
+Note that the evolution of wealth under option $b$ is the same as in case B.
+
+
+The criterion $g_a > g_b$ is actually very simple, since only the second term in the logarithm is different and so only this must be compared. Thus, $g_a > g_b$ if
 \be
-x\left(t_0+\Dt_b\right) = x\left(t_0\right) e^{r \Dt_b} + \Dx_a e^{r \left(\Dt_b - \Dt_a\right)}\,,
+\Dx_a e^{r(t_b-t_a)} > \Dx_b\,,
+\ee
+or, in terms of the delay, if
+\be
+\Dx_a e^{r\del} > \Dx_b\,.
 \ee
 
-and the corresponding growth rate would be (recall that $\Epsilon \equiv \Dt_b - \Dt_a$)
+The discount factor is similarly easily expressed by setting the growth rates to be equal. Then we get $\Dx_a e^{r\del} = \Dx_b$ and
 \be
-g_a = \frac{1}{\Dt_b} \log{\left(\frac{x\left(t_0+\Dt_b\right)}{x\left(t_0\right)}\right)} = \frac{1}{\Dt_b}\log{\left(e^{r \Dt_b} + \frac{\Dx_a e^{r \Epsilon}}{x\left(t_0\right)}\right)}\,.
+\delta = \frac{\Dx_a}{\Dx_b} = e^{-r\del}\,,
 \ee
-
-It follows that the criterion $g_a > g_b$ is
-\be
-\Dx_a e^{r \Epsilon} > \Dx_b\,.
-\ee
-
-The discount factor can be then easily calculated by considering the equality of the growth rates. In this case we get $\Dx_a e^{r \Epsilon} = \Dx_b$ and therefore
-\be
-\delta_D = \frac{\Dx_a}{\Dx_b} = e^{-r\Epsilon}\,,
-\ee
-which is the standard exponential discounting result. In other words, if it is possible to re-invest the reward given at time $\Dt_a$ so that it surpasses the alternative reward given at time $\Dt_b$, option $a$ is preferable over option $b$, and vice versa.
+which is the standard exponential discounting result. The interpretation is straightforward: if it is possible to re-invest the earlier payment such that, by the time of the later payment, it will exceed the later payment amount, then option $a$ is preferable to option $b$ (and \textit{vice versa}). Note that, with this specification, the horizon is irrelevant. All that matters is the payment amount after possible re-investment.
 
 \section{Discussion}\label{sec:discussion}
 

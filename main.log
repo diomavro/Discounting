@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.1)  15 MAY 2019 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.1)  28 MAY 2019 12:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -857,20 +857,20 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 62.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
 
 (c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -888,7 +888,7 @@ LaTeX Font Info:    ... okay on input line 169.
 )
 \c@lstlisting=\count179
 \AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring ON on input line 169.
+Package hyperref Info: Link coloring ON on input line 173.
  (c:/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -897,9 +897,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count180
 )
-LaTeX Info: Redefining \ref on input line 169.
-LaTeX Info: Redefining \pageref on input line 169.
-LaTeX Info: Redefining \nameref on input line 169.
+LaTeX Info: Redefining \ref on input line 173.
+LaTeX Info: Redefining \pageref on input line 173.
+LaTeX Info: Redefining \nameref on input line 173.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
@@ -943,27 +943,27 @@ LaTeX Info: Redefining \nameref on input line 169.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 180.
+LaTeX Font Info:    Try loading font information for U+msa on input line 184.
 
 (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 180.
+LaTeX Font Info:    Try loading font information for U+msb on input line 184.
 
 (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 180.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 184.
 
 (c:/texlive/2018/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 181--187
+Underfull \hbox (badness 10000) in paragraph at lines 185--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--187
+Underfull \hbox (badness 10000) in paragraph at lines 185--191
 
  []
 
@@ -978,13 +978,13 @@ Package epstopdf Info: Source file: <./figures/basicsetup.eps>
 (epstopdf)                    size: 5832 bytes
 (epstopdf)             Command: <repstopdf --outfile=./basicsetup-eps-converted
 -to.pdf ./figures/basicsetup.eps>
-(epstopdf)             \includegraphics on input line 235.
+(epstopdf)             \includegraphics on input line 239.
 Package epstopdf Info: Output file is already uptodate.
 <./basicsetup-eps-converted-to.pdf, id=144, 345.29pt x 266.9975pt>
 File: ./basicsetup-eps-converted-to.pdf Graphic file (type pdf)
 <use ./basicsetup-eps-converted-to.pdf>
 Package pdftex.def Info: ./basicsetup-eps-converted-to.pdf  used on input line 
-235.
+239.
 (pdftex.def)             Requested size: 298.11374pt x 230.52187pt.
 
 [3] [4 <./basicsetup-eps-converted-to.pdf>] [5] [6]
@@ -996,12 +996,12 @@ Package epstopdf Info: Source file: <./figures/tree.eps>
 (epstopdf)                    size: 5742 bytes
 (epstopdf)             Command: <repstopdf --outfile=./tree-eps-converted-to.pd
 f ./figures/tree.eps>
-(epstopdf)             \includegraphics on input line 310.
+(epstopdf)             \includegraphics on input line 318.
 Package epstopdf Info: Output file is already uptodate.
 <./tree-eps-converted-to.pdf, id=192, 294.09875pt x 146.5475pt>
 File: ./tree-eps-converted-to.pdf Graphic file (type pdf)
 <use ./tree-eps-converted-to.pdf>
-Package pdftex.def Info: ./tree-eps-converted-to.pdf  used on input line 310.
+Package pdftex.def Info: ./tree-eps-converted-to.pdf  used on input line 318.
 (pdftex.def)             Requested size: 298.11374pt x 148.54845pt.
  [7 <./tree-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./figures/case_A.eps>
@@ -1012,12 +1012,12 @@ Package epstopdf Info: Source file: <./figures/case_A.eps>
 (epstopdf)                    size: 5922 bytes
 (epstopdf)             Command: <repstopdf --outfile=./case_A-eps-converted-to.
 pdf ./figures/case_A.eps>
-(epstopdf)             \includegraphics on input line 338.
+(epstopdf)             \includegraphics on input line 350.
 Package epstopdf Info: Output file is already uptodate.
 <./case_A-eps-converted-to.pdf, id=206, 345.29pt x 268.00125pt>
 File: ./case_A-eps-converted-to.pdf Graphic file (type pdf)
 <use ./case_A-eps-converted-to.pdf>
-Package pdftex.def Info: ./case_A-eps-converted-to.pdf  used on input line 338.
+Package pdftex.def Info: ./case_A-eps-converted-to.pdf  used on input line 350.
 
 (pdftex.def)             Requested size: 298.11374pt x 231.38849pt.
  [8] [9 <./case_A-eps-converted-to.pdf>] [10] [11] [12] [13] (./main.bbl
@@ -1027,40 +1027,45 @@ d-sen,
  []
 
 [14]) [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 475.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 475.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 515.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 515.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 475.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 475.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 515.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 515.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D308D0D097026DF272382D6DA259C27B;797.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 475.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 515.
  ) 
 Here is how much of TeX's memory you used:
- 21318 strings out of 492616
- 382557 string characters out of 6132769
- 471660 words of memory out of 5000000
- 24735 multiletter control sequences out of 15000+600000
- 12771 words of font info for 50 fonts, out of 8000000 for 9000
+ 21340 strings out of 492616
+ 382766 string characters out of 6132769
+ 470950 words of memory out of 5000000
+ 24748 multiletter control sequences out of 15000+600000
+ 15290 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,51p,1101b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
-.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2018/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (16 pages, 214936 bytes).
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
+st, replaced by a fixed one
+
+<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi9.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2018/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2018/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr9.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (16 pages, 242273 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
- 291 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 351 PDF objects out of 1000 (max. 8388607)
+ 304 compressed objects within 4 object streams
+ 72 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
