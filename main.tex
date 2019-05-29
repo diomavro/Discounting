@@ -349,11 +349,15 @@ This criterion suggests that, under this specification, the only thing that matt
 
 If we treat the payment amounts, $\Dx_a$ and $\Dx_b$, and payment times, $t_a$ and $t_b$, as fixed parameters of the problem, then we can elicit the dependence of the decision on the decision time, $t_0$. When the payments are far ahead in the future, \ie as $t_0\to-\infty$, the denominators in the growth rates approach each other and $g_a<g_b$ since we have assumed $\Dx_a<\Dx_b$. When the earlier payment is imminent, \ie as $t_0\to t_a$, $g_a$ grows without bound while $g_b$ remains finite and so $g_a>g_b$. In other words, as time passes, our decision model under this specification predicts preference reversal from the later, larger payment to the earlier, smaller payment. This is illustrated in~\fref{caseA}.
 
-\begin{figure}[!htb]
+\begin{figure}
 \centering
-\includegraphics[width=0.75\textwidth]{./figures/reversal.pdf}
+\begin{picture}(420,100)(0,0)
+\put(-50,0){\includegraphics[width=0.39\textwidth]{./figures/reversal_1.pdf}}
+\put(110,0){\includegraphics[width=0.39\textwidth]{./figures/reversal_2.pdf}}
+\put(270,0){\includegraphics[width=0.39\textwidth]{./figures/reversal_3.pdf}}
+\end{picture}
 \caption{
-An illustration of preference reversal in case A. Initially, option $b$ is preferable, as reflected in the slopes of the blue lines. The solid blue line shows the payout rate of option $a$ and the dashed blue line shows the payout rate of option $b$. At a later time $t_0^{PR}$, both options imply equal growth (green lines), and preference reversal occurs. At later times (red lines) option $a$ is preferable. 
+Preference reversal in case A. From left to right panel, $t_0$ increases, that is, the time of the payments approaches, while all other parameters are unchanged. Initially, option $b$ is preferable, having the higher growth rate. At a later time $t_0=t_0^{PR}$, given by \eref{t0PR}, both options imply equal growth, and preference reversal occurs. At later times option $a$ is preferable. 
 }
 \flabel{caseA}
 \end{figure}
@@ -366,6 +370,7 @@ An illustration of preference reversal in case A. Initially, option $b$ is prefe
 We can compute the decision time, $t_0^\text{PR}$, at which preference reversal occurs by setting $g_a=g_b$ to give
 \be
 t_0^\text{PR} = \frac{\Dx_b t_a - \Dx_a t_b}{\Dx_b - \Dx_a}.
+\elabel{t0PR}
 \ee
 
 We can also find the effective discount factor under this specification. When $g_a=g_b$, we have
@@ -431,8 +436,23 @@ Using the previous definitions of $\hor$ and $\del$, we can write this as
 \ee
 which is a hybrid of hyperbolic and exponential discounting. We note again that only the elapsed times, $\hor$ and $\del$, appear in the discount factor. However, that the background wealth growth rate, $r$, no longer cancels out when dynamics are multiplicative, as does $k$ when they are additive.
 
-Case B also displays another type of preference reversal. Varying initial wealth $x(t_0)$ while keeping all other parameters fixed can lead to a switch from $g_a>g_b$ to $g_a<g_b$. 
+Case B also displays another type of preference reversal. Varying initial wealth $x(t_0)$ while keeping all other parameters fixed can lead to a switch from $g_a>g_b$ to $g_a<g_b$, as illustrated in \fref{reversal_B}
 %An example is given in panel A of \fref{reversal_2}, and 
+
+\begin{figure}
+\centering
+\begin{picture}(420,100)(0,0)
+\put(-50,0){\includegraphics[width=0.39\textwidth]{./figures/reversal_B_1.pdf}}
+\put(110,0){\includegraphics[width=0.39\textwidth]{./figures/reversal_B_2.pdf}}
+\put(270,0){\includegraphics[width=0.39\textwidth]{./figures/reversal_B_3.pdf}}
+\end{picture}
+\caption{
+Preference reversal in response to wealth changes, in case B, logarithmic vertical scales. Initial wealth $x(t_0)$ increases from left to right panel, while all other parameters are unchanged. Initially, option $b$ is preferable, having the higher growth rate. At a greater wealth, $x(t_0)^{PR}$, both options imply equal growth, and preference reversal occurs. At even greater wealth, option $a$ is preferable: the poor choose less money sooner.
+}
+\flabel{reversal_B}
+\end{figure}
+
+
 The difference $g_a-g_b$ is shown as a function of $x(t_0)$ in \fref{reversal_2}. This type of preference reversal can be expressed as follows: under certain circumstances, it is growth-optimal for people of lower wealth to choose a small early payout, whereas it is growth-optimal for wealthier individuals to hold out until the later larger payment.
 
 \begin{figure}[!htb]
