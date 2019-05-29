@@ -431,6 +431,18 @@ Using the previous definitions of $\hor$ and $\del$, we can write this as
 \ee
 which is a hybrid of hyperbolic and exponential discounting. We note again that only the elapsed times, $\hor$ and $\del$, appear in the discount factor. However, that the background wealth growth rate, $r$, no longer cancels out when dynamics are multiplicative, as does $k$ when they are additive.
 
+Case B also displays another type of preference reversal. Varying initial wealth $x(t_0)$ while keeping all other parameters fixed can lead to a switch from $g_a>g_b$ to $g_a<g_b$. 
+%An example is given in panel A of \fref{reversal_2}, and 
+The difference $g_a-g_b$ is shown as a function of $x(t_0)$ in \fref{reversal_2}. This type of preference reversal can be expressed as follows: under certain circumstances, it is growth-optimal for people of lower wealth to choose a small early payout, whereas it is growth-optimal for wealthier individuals to hold out until the later larger payment.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.75\textwidth]{./figures/ga_gb.pdf}
+\caption{The difference $g_a-g_b$ is positive when the earlier payment is preferable, and otherwise negative. We see that for small initial wealths $x(t_0)$ the earlier smaller payment is preferred, whereas for large initial wealth the later larger payment is preferred. Parameters $t_a-t_0=1$~year, $t_b-t_0=2$~years, $\Delta x_a=\$500$, $\Delta x_b=\$1200$.}
+\flabel{reversal_2}
+\end{figure}
+
+\FloatBarrier
 \subsection{Case C -- Fixed time frame with additive dynamics}\label{sec:case_C}
 
 Now we assume additive dynamics as in case A, but with a fixed time frame so that the outcomes of both choices are compared at $t_b$. The wealths evolve to: \bea
