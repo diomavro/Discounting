@@ -419,8 +419,8 @@ x_b\left(t_b\right) &=& x\left(t_0\right) e^{r(t_b-t_0)} + \Dx_b\,.
 
 The corresponding growth rates are:
 \bea
-g_a &= \frac{1}{t_a-t_0} \log{\left(\frac{x_a\left(t_a\right)}{x\left(t_0\right)}\right)} = \frac{1}{t_a-t_0}\log{\left(1 + \frac{\Dx_a}{x\left(t_0\right)e^{r(t_a-t_0)}}\right)} + r\\
-g_b &= \frac{1}{t_b-t_0} \log{\left(\frac{x_b\left(t_b\right)}{x\left(t_0\right)}\right)} = \frac{1}{t_b-t_0}\log{\left(1 + \frac{\Dx_b}{x\left(t_0\right)e^{r(t_b-t_0)}}\right)} + r\,.
+g_a &= \frac{1}{t_a-t_0} \log{\left(\frac{x_a\left(t_a\right)}{x\left(t_0\right)}\right)} = \frac{1}{t_a-t_0}\log{\left(1 + \frac{\Dx_a}{x\left(t_0\right)e^{r(t_a-t_0)}}\right)} + r \elabel{ga_B}\\
+g_b &= \frac{1}{t_b-t_0} \log{\left(\frac{x_b\left(t_b\right)}{x\left(t_0\right)}\right)} = \frac{1}{t_b-t_0}\log{\left(1 + \frac{\Dx_b}{x\left(t_0\right)e^{r(t_b-t_0)}}\right)} + r\,.\elabel{gb_B}
 \eea
 
 This setting displays preference reversal: $g_a<g_b$ for $t_0$ sufficiently far away from $t_a$ (long horizon); and $g_a>g_b$ for $t_0$ sufficiently close to $t_a$ (short horizon). No closed-form expression for the reversal time, $t_0^\text{PR}$, is available.
@@ -447,19 +447,18 @@ Case B also displays another type of preference reversal. Varying initial wealth
 \put(270,0){\includegraphics[width=0.39\textwidth]{./figures/reversal_B_3.pdf}}
 \end{picture}
 \caption{
-Preference reversal in response to wealth changes, in case B, logarithmic vertical scales. Initial wealth $x(t_0)$ increases from left to right panel, while all other parameters are unchanged. Initially, option $b$ is preferable, having the higher growth rate. At a greater wealth, $x(t_0)^{PR}$, both options imply equal growth, and preference reversal occurs. At even greater wealth, option $a$ is preferable: the poor choose less money sooner.
+Preference reversal in response to wealth changes, in case B, logarithmic vertical scales. Initial wealth $x(t_0)$ increases from left to right panel (\$500, \$2277, \$5,000), while all other parameters are unchanged ($t_0=$ today, $t_a=1$~year from today, $t_b=2$~years from today, $\Dx_a=\$1000$, $\Dx_b=\$2500$, $r=0.03$~per annum). At low wealth, option $a$ is preferable, having the higher growth rate, according to \eref{ga_B} and \eref{gb_B}. At a greater wealth, $x(t_0)^{PR}\approx \$2277$, both options imply equal growth, and preference reversal occurs. At even greater wealth, option $b$ is preferable: the poor behave optimally by choosing the small early payment.
 }
 \flabel{reversal_B}
 \end{figure}
 
-
-The difference $g_a-g_b$ is shown as a function of $x(t_0)$ in \fref{reversal_2}. This type of preference reversal can be expressed as follows: under certain circumstances, it is growth-optimal for people of lower wealth to choose a small early payout, whereas it is growth-optimal for wealthier individuals to hold out until the later larger payment.
+The difference $g_a-g_b$, \eref{ga_B} and \eref{gb_B}, is shown as a function of $x(t_0)$ in \fref{reversal_B2}. This type of preference reversal can be expressed as follows: under certain circumstances, it is growth-optimal for people of lower wealth to choose a small early payout, whereas it is growth-optimal for wealthier individuals to hold out until the later larger payment.
 
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.75\textwidth]{./figures/ga_gb.pdf}
-\caption{The difference $g_a-g_b$ is positive when the earlier payment is preferable, and otherwise negative. We see that for small initial wealths $x(t_0)$ the earlier smaller payment is preferred, whereas for large initial wealth the later larger payment is preferred. Parameters $t_a-t_0=1$~year, $t_b-t_0=2$~years, $\Delta x_a=\$500$, $\Delta x_b=\$1200$.}
-\flabel{reversal_2}
+\caption{The difference $g_a-g_b$ is positive when the earlier payment is preferable, and otherwise negative. We see that for small initial wealths $x(t_0)$ the earlier smaller payment is preferred, whereas for large initial wealth the later larger payment is preferred (parameters as in \fref{reversal_B}).}
+\flabel{reversal_B2}
 \end{figure}
 
 \FloatBarrier

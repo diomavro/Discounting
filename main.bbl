@@ -1,0 +1,98 @@
+
+
+% Bibstyle aea.bst version 2009.05.20
+
+\begin{thebibliography}{xx}
+
+\harvarditem[Ainslie]{George Ainslie}{1992}{ainslie1992picoeconomics}
+{\bf Ainslie, George.} 1992. {\em Picoeconomics: The Strategic Interaction of
+  Successive Motivational States within the Person.} Cambridge University
+  Press.
+
+\harvarditem[Berman, Peters \harvardand\ Adamou]{Yonatan Berman, Ole Peters
+  \harvardand\ Alexander Adamou}{2017}{berman2016far}
+{\bf Berman, Yonatan, Ole Peters, and Alexander Adamou.} 2017. ``An Empirical
+  Test of the Ergodic Hypothesis: Wealth Distributions in the United States.''
+  Available at SSRN.
+
+\harvarditem[Dasgupta \harvardand\ Maskin]{Partha Dasgupta \harvardand\ Eric
+  Maskin}{2005}{dasgupta2005uncertainty}
+{\bf Dasgupta, Partha, and Eric Maskin.} 2005. ``Uncertainty and Hyperbolic
+  Discounting.'' {\em American Economic Review}, 95(4):~1290--1299.
+
+\harvarditem[Grether \harvardand\ Plott]{David~M. Grether \harvardand\
+  Charles~R. Plott}{1979}{grether1979economic}
+{\bf Grether, David~M., and Charles~R. Plott.} 1979. ``Economic Theory of
+  Choice and the Preference Reversal Phenomenon.'' {\em American Economic
+  Review}, 69(4):~623--638.
+
+\harvarditem[Laibson]{David Laibson}{1997}{laibson1997golden}
+{\bf Laibson, David.} 1997. ``Golden Eggs and Hyperbolic Discounting.'' {\em
+  Quarterly Journal of Economics}, 112(2):~443--478.
+
+\harvarditem[Lichtenstein \harvardand\ Slovic]{Sarah Lichtenstein \harvardand\
+  Paul Slovic}{1971}{lichtenstein1971reversals}
+{\bf Lichtenstein, Sarah, and Paul Slovic.} 1971. ``Reversals of Preference
+  Between Bids and Choices in Gambling Decisions.'' {\em Journal of
+  Experimental Psychology}, 89(1):~46.
+
+\harvarditem[Lindman]{Harold~R. Lindman}{1971}{lindman1971inconsistent}
+{\bf Lindman, Harold~R.} 1971. ``Inconsistent Preferences among Gambles.'' {\em
+  Journal of Experimental Psychology}, 89(2):~390--397.
+
+\harvarditem[Loomes \harvardand\ Sugden]{Graham Loomes \harvardand\ Robert
+  Sugden}{1983}{loomes1983rationale}
+{\bf Loomes, Graham, and Robert Sugden.} 1983. ``A Rationale for Preference
+  Reversal.'' {\em American Economic Review}, 73(3):~428--432.
+
+\harvarditem[Meder et~al.]{David Meder, Finn Rabe, Tobias Morville, Kristoffer
+  Madsen, Hartwig~R. Siebner \harvardand\ Oliver~J.
+  Hulme}{2019}{hulme2019unpublished}
+{\bf Meder, David, Finn Rabe, Tobias Morville, Kristoffer Madsen, Hartwig~R.
+  Siebner, and Oliver~J. Hulme.} 2019. ``Ergodicity-Breaking Reveals Time
+  Optimal Economic Behavior in Humans.'' Unpublished.
+
+\harvarditem[Peters \harvardand\ Adamou]{Ole Peters \harvardand\ Alexander
+  Adamou}{2018}{peters2018time}
+{\bf Peters, Ole, and Alexander Adamou.} 2018. ``The Time Interpretation of
+  Expected Utility Theory.''
+
+\harvarditem[Peters \harvardand\ Gell-Mann]{Ole Peters \harvardand\ Murray
+  Gell-Mann}{2016}{peters2016evaluating}
+{\bf Peters, Ole, and Murray Gell-Mann.} 2016. ``Evaluating Gambles Using
+  Dynamics.'' {\em Chaos: An Interdisciplinary Journal of Nonlinear Science},
+  26(2):~023103.
+
+\harvarditem[Rubinstein]{Ariel Rubinstein}{2003}{rubinstein2003economics}
+{\bf Rubinstein, Ariel.} 2003. ````Economics and psychology''? The Case of
+  Hyperbolic Discounting.'' {\em International Economic Review},
+  44(4):~1207--1216.
+
+\harvarditem[Smith]{Vernon~L. Smith}{2003}{smith2003constructivist}
+{\bf Smith, Vernon~L.} 2003. ``Constructivist and Ecological Rationality in
+  Economics.'' {\em American Economic Review}, 93(3):~465--508.
+
+\harvarditem[Sozou]{Peter~D. Sozou}{1998}{sozou1998hyperbolic}
+{\bf Sozou, Peter~D.} 1998. ``On Hyperbolic Discounting and Uncertain Hazard
+  Rates.'' {\em Proceedings of the Royal Society of London B: Biological
+  Sciences}, 265:~2015--2020.
+
+\harvarditem[Starmer]{Chris Starmer}{2000}{starmer2000developments}
+{\bf Starmer, Chris.} 2000. ``Developments in Non-expected Utility Theory: The
+  Hunt for a Descriptive Theory of Choice Under Risk.'' {\em Journal of
+  Economic Literature}, 38(2):~332--382.
+
+\harvarditem[Thaler]{Richard~H. Thaler}{2016}{thaler2016behavioral}
+{\bf Thaler, Richard~H.} 2016. ``Behavioral Economics: Past, Present, and
+  Future.'' {\em American Economic Review}, 106(7):~1577--1600.
+
+\harvarditem[Tversky]{Amos Tversky}{1969}{tversky1969intransitivity}
+{\bf Tversky, Amos.} 1969. ``Intransitivity of Preferences.'' {\em
+  Psychological Review}, 76(1):~31--48.
+
+\harvarditem[Tversky, Slovic \harvardand\ Kahneman]{Amos Tversky, Paul Slovic
+  \harvardand\ Daniel Kahneman}{1990}{tversky1990causes}
+{\bf Tversky, Amos, Paul Slovic, and Daniel Kahneman.} 1990. ``The Causes of
+  Preference Reversal.'' {\em American Economic Review}, 80(1):~204--217.
+
+\end{thebibliography}
