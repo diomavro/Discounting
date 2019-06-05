@@ -22,7 +22,6 @@ Dxa=1000
 Dxb=2500
 r=.03
 
-
 xta=x0*np.exp(r*(ta-t0))+Dxa
 xtb=x0*np.exp(r*(tb-t0))+Dxb
 
