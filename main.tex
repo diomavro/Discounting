@@ -178,15 +178,15 @@ urlcolor={blue!50!black}}
 %\onehalfspacing
 \begin{titlepage}
 \title{Temporal Discounting Without Uncertainty: Growth Rates, Preference Reversal and Hyperbolic Discounting}
-\author{Alexander Adamou \and Yonatan Berman \and Diomides Mavroyiannis \and Ole Peters}
+\author{Alexander Adamou\footnote{London Mathematical Laboratory, a.adamou@lml.org.uk} \and Yonatan Berman\footnote{London Mathematical Laboratory, y.berman@lml.org.uk} \and Diomides Mavroyiannis\footnote{Universit\'{e} Paris-Dauphine, dmavroyiannis8@gmail.com } \and Ole Peters\footnote{London Mathematical Laboratory and Santa Fe Institute, o.peters@lml.org.uk}\,\, \thanks{We wish to thank Ryan Singer for fruitful discussions and comments.}}
 %\date{First version: August 26, 2018\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,Last revised: \today}
 %\date{\today\\\href{https://www.dropbox.com/s/epq42goae2px35i/mobility_recov.pdf?dl=0}{Click here for most recent version.}}
 %\date{}
 \date{\today}
 \maketitle
 \begin{abstract}
-\noindent An important question in economics is how people evaluate payments in the future. The standard phrasing of the problem is in part psychological. The value we attach to a future payment is the dollar value of the payment discounted by a factor whose functional form is determined subjectively and whose (objective) argument is how long we have to wait for the payment. Here we explore how discounting arises from growth rate optimization, in four specifications of a Certain Intertemporal Payment Problem (CIPP). Exponential discounting is recovered as optimizing a multiplicative growth rate, and hyperbolic discounting as optimizing an additive growth rate. Preference reversal occurs in two of the specifications we study.
-%An important question in economics is how people evaluate payments in the future. The standard phrasing of the problem is in part psychological: the value we attach to a future payment is the dollar value of the payment discounted by a factor whose functional form is determined by our subjective psychology and whose (objective) argument is how long we have to wait for the payment. The functional form is called the ``discounting function'', in practice commonly exponential or hyperbolic. Here we present an interpretation of these forms in terms of growth rates. A payment in the future, we posit, is often viewed as a growth rate of wealth averaged over the time until the payment. Choosing the greatest multiplicative growth rate is mathematically equivalent to exponential discounting, while maximising the additive growth rate is equivalent to hyperbolic discounting. Multiplicative and additive processes are important models of wealth evolution, corresponding approximately to unearned and earned income. Other growth processes result in different discounting functions.
+\noindent An important question in economics is how people evaluate payoffs in the future. The standard phrasing of the problem is in part psychological. The value we attach to a future payoff is the dollar value of the payoff discounted by a factor whose functional form is determined subjectively and whose (objective) argument is how long we have to wait for the payoff. Here we explore how discounting arises from growth rate optimization, in four specifications of a Certain Intertemporal Payoff Problem (CIPP). Exponential discounting is recovered as optimizing a multiplicative growth rate, and hyperbolic discounting as optimizing an additive growth rate. Preference reversal occurs in two of the specifications we study.
+%An important question in economics is how people evaluate payoffs in the future. The standard phrasing of the problem is in part psychological: the value we attach to a future payoff is the dollar value of the payoff discounted by a factor whose functional form is determined by our subjective psychology and whose (objective) argument is how long we have to wait for the payoff. The functional form is called the ``discounting function'', in practice commonly exponential or hyperbolic. Here we present an interpretation of these forms in terms of growth rates. A payoff in the future, we posit, is often viewed as a growth rate of wealth averaged over the time until the payoff. Choosing the greatest multiplicative growth rate is mathematically equivalent to exponential discounting, while maximising the additive growth rate is equivalent to hyperbolic discounting. Multiplicative and additive processes are important models of wealth evolution, corresponding approximately to unearned and earned income. Other growth processes result in different discounting functions.
 \\
 \\
 \noindent\textbf{Keywords: Decision theory, Hyperbolic discounting, Ergodicity economics}
@@ -208,18 +208,22 @@ This paper studies temporal discounting in a deterministic setting. In our model
 
 Preference reversal (\textit{PR}) is a behavioral phenomenon documented during the past half a century in many studies in economics and psychology~\citep{lichtenstein1971reversals,lindman1971inconsistent,grether1979economic,loomes1983rationale,tversky1990causes,ainslie1992picoeconomics,laibson1997golden}. It takes various forms in different contexts. In its original psychological context~\citep{tversky1969intransitivity,lichtenstein1971reversals} it refers to the intransitivity in decision making under uncertainty. It also refers to the phenomenon in which a decision maker changes his mind between two options as time passes. 
 
-In our model PR is a consequence of growth rate optimization. Specifications that lead to standard exponential discounting do not generate PR, but others do. The dynamic and time frame specification reflect the situation of a decision maker. Thus a single behavioral algorithm, a single optimand, is consistent with a range of observed behaviors if the situation of the decision maker is formally taken into account.
+In our model PR is a consequence of growth rate optimization. Specifications that lead to standard exponential discounting do not generate PR, but others do. The dynamic and time frame specification reflect the situation of a decision maker. Thus a single behavioral model,
+%YB I replaced algorithm with model. I think algorithm is a bit too vague
+a single optimand, is consistent with a range of observed behaviors if the situation of the decision maker is formally taken into account.
 
 %This approach is similar to~\citet{Radner1998} -- he assumed that firms maximize their survival rate, which is a special case of maximizing the growth rate. To see why we note that if a strategy results in non-survival, then the growth rate for it will be zero. 
 %XXX OP: zero growth rate means maintaining status quo, not death... XXX
 %He further shows that firms that maximize the probability of survival, will outcompete those which maximize profits and hence, in the long run there will only be survival maximizing firms.
 %XXX OP: not sure this is true, but I don't know what the terms mean. I can easily imagine a situation where I can guarantee survival at zero growth, and a little risk gets a big reward, which may well lead to outperformance despite the risk of non-survival.XXX
 
-This paper predicts hyperbolic discounting, and hence PR, from considerations that do not violate the standard von Neumann-Morgenstern axioms. Our framework does not assume any form of irrationality or inconsistency on the part of the decision maker. Changes in the type of discounting come from different dynamics and time frames, \ie properties of the situation of the decision maker, not properties of the decision maker himself. Thus, utility functions or temporal preferences are not part of our model specification -- such apparently idiosyncratic properties can be derived from a full specification of the situation.
+The main contribution of this paper is the prediction of hyperbolic discounting, and hence PR, from considerations that do not violate the standard von Neumann-Morgenstern axioms.
+% Added ``the main contribution...'' unfortunately, this is a phrase people sometimes look for when reading these papers
+Our framework does not assume any form of irrationality or inconsistency on the part of the decision maker. Changes in the type of discounting come from different dynamics and time frames, \ie properties of the situation of the decision maker, not properties of the decision maker himself. Thus, utility functions or temporal preferences are not part of our model specification -- such apparently idiosyncratic properties can be derived from a full specification of the situation.
 
-The paper also contributes to the growing branch of ergodicity economics~\citep{peters2016evaluating,berman2016far,peters2018time}, which proposes an alternative to mainstream decision theories, such as expected utility theory and prospect theory, namely that agents maximize the growth of their resources averaged over time. This joins recent evidence of a strong effect of changes to the wealth dynamic on choices under uncertainty~\citep{MederETAL2019}.
+The paper also contributes to the growing branch of ergodicity economics~\citep{peters2016evaluating,berman2016far,peters2018time}. It proposes an alternative framework to expected utility theory or prospect theory, suggesting that agents maximize the growth of their resources averaged over time. This joins recent evidence of a strong effect of changes to the wealth dynamic on choices under uncertainty~\citep{meder2019ergodicity}.
 
-The paper is organized as follows.~\Sref{model} lays out our model and the basic setup of the problem we are addressing. In~\Sref{results} we present different specifications for the problem in question. We describe how a decision maker will discount payouts in each specification under our model, giving rise to preference reversal. We conclude in~\Sref{discussion}.
+The paper is organized as follows.~\Sref{model} lays out our model and the basic setup of the problem we are addressing. In~\Sref{results} we present different specifications for the problem in question. We describe how a decision maker will discount payoffs in each specification under our model, giving rise to preference reversal. We conclude in~\Sref{discussion}.
 
 \subsection{Related literature}
 
@@ -236,7 +240,7 @@ Yet, the dynamically inconsistent preferences it induces have challenged standar
 The reasoning behind the model of~\citet{sozou1998hyperbolic}, for example, is that agents do not know the hazard rate of a random event and learn about it over time through Bayesian updating. Thus, the longer an event does not occur, the more likely it is that it will not occur (decreasing estimated hazard rate). Using this approach, it is shown that an exponential distribution yields hyperbolic discounting.
 XXXOP: exponential distribution of what? Waiting times? For a Poisson process that's always true, so do we need to mention the exponential distribution here? When I read ``hazard rate'' I think of a Poisson process -- is this something different?
 
-On the other hand,~\citet{dasgupta2005uncertainty} assume that the agent knows that an event will occur but not when. The mechanics behind the model are that since an event will occur by some future time, the closer we are to that future time the more certain one of the events will occur very soon. This is because it is initially assumed that the probability of early realizations is the same for both gambles. This, in turn, means that the chance for early realization is more valuable for larger payouts than smaller payouts. They later extend their result to say that the density is not the same but that the probability of one event increases relatively more over time which allows for a wider class of hazard functions. This provides a model for how hyperbolic discounting can describe PR under uncertainty.
+On the other hand,~\citet{dasgupta2005uncertainty} assume that the agent knows that an event will occur but not when. The mechanics behind the model are that since an event will occur by some future time, the closer we are to that future time the more certain one of the events will occur very soon. This is because it is initially assumed that the probability of early realizations is the same for both gambles. This, in turn, means that the chance for early realization is more valuable for larger payoffs than smaller payoffs. They later extend their result to say that the density is not the same but that the probability of one event increases relatively more over time which allows for a wider class of hazard functions. This provides a model for how hyperbolic discounting can describe PR under uncertainty.
 
 XXXOP: I didn't understand this paragraph. Also final sentence: hyperbolic discounting implies PR, so finding a reason for hyperbolic discounting means also finding a reason for PR.
 
@@ -246,20 +250,20 @@ XXXOP: really? Discounting (though maybe not hyperbolic discounting?) as an idea
 
 \section{Model}\label{sec:model}
 
-We begin by defining a \textit{Certain Intertemporal Payment Problem} (CIPP).
+We begin by defining a \textit{Certain Intertemporal Payoff Problem} (CIPP).
 
-\begin{definition}{Certain Intertemporal Payment Problem}
+\begin{definition}{Certain Intertemporal Payoff Problem}
 
-A Certain Intertemporal Payment Problem (CIPP) is a vector $\{t_0,x\left(t_0\right),t_a,\Dx_a,t_b,\Dx_b\}$ -- a decision maker at time $t_0$ with wealth $x\left(t_0\right)$, chooses between two future cash payouts, one earlier than the other, whose amounts and payout times are known with certainty. The two options are:
+A Certain Intertemporal Payoff Problem (CIPP) is a vector $\{t_0,x\left(t_0\right),t_a,\Dx_a,t_b,\Dx_b\}$ -- a decision maker at time $t_0$ with wealth $x\left(t_0\right)$, chooses between two future cash payoffs, one earlier than the other, whose amounts and payoff times are known with certainty. The two options are:
 
 \begin{enumerate}
-\item[$a$.] an earlier payment of $\Dx_a$ at time $t_a>t_0$; and
-\item[$b$.] a later payment of $\Dx_b>\Dx_a$ at time $t_b>t_a$.
+\item[$a$.] an earlier payoff of $\Dx_a$ at time $t_a>t_0$; and
+\item[$b$.] a later payoff of $\Dx_b>\Dx_a$ at time $t_b>t_a$.
 \end{enumerate}
 
 \end{definition}
 
-A formal decision theory has to provide a criterion for choosing $a$ or $b$. Here we explore what happens if that criterion is growth rate maximization. A growth rate, $g$, is defined as the scale parameter of time for an underlying dynamic of wealth. Wealth dynamics can take different forms. Ignoring payments $\Dx_a$ and $\Dx_b$, a standard assumption is that wealth grows exponentially in time at rate $r$. We label this dynamic as multiplicative. It corresponds to investing wealth in income-generating assets, where the income is proportional to the amount invested. In this case wealth follows
+A formal decision theory has to provide a criterion for choosing $a$ or $b$. Here we explore what happens if that criterion is growth rate maximization. A growth rate, $g$, is defined as the scale parameter of time for an underlying dynamic of wealth. Wealth dynamics can take different forms. Ignoring payoffs $\Dx_a$ and $\Dx_b$, a standard assumption is that wealth grows exponentially in time at rate $r$. We label this dynamic as multiplicative. It corresponds to investing wealth in income-generating assets, where the income is proportional to the amount invested. In this case wealth follows
 
 \be
 x\left(t\right) = x\left(0\right) e^{r t}\,,
@@ -289,7 +293,7 @@ Given a wealth dynamic, time $t_0$, an initial wealth $x\left(t_0\right)$, and t
 \label{ax:ax1}
 \end{axiom}
 
-In words,~\Aref{ax1} postulates that a decision maker will prefer choice $a$ if her wealth grows faster under this choice than under choice $b$, and vice versa. Indifference only occurs if the growth rates are equal.~\Aref{ax1} trivially satisfies the von Neumann-Morgenstern axioms -- completeness is satisfied by design, while continuity and independence are irrelevant, since in this setup all the payouts and times are certain. It also satisfies transitivity.
+In words,~\Aref{ax1} postulates that a decision maker will prefer choice $a$ if her wealth grows faster under this choice than under choice $b$, and vice versa. Indifference only occurs if the growth rates are equal.~\Aref{ax1} trivially satisfies the von Neumann-Morgenstern axioms -- completeness is satisfied by design, while continuity and independence are irrelevant, since in this setup all the payoffs and times are certain. It also satisfies transitivity.
 
 \begin{proposition}{Optimization of Growth is Transitive}
 
@@ -299,32 +303,33 @@ Under the notation of~\Aref{ax1}, the Transitivity axiom is satisfied.
 
 \subsection{Setup}
 
-In a CIPP, $\Dx_b>\Dx_a$ because a larger and earlier payment is trivially always preferred. This setup is illustrated in~\fref{basicsetup}. We note again that in this setup there is no uncertainty in the payoffs or in the times in which they are realized. Thus, there is no risk.
+In a CIPP, $\Dx_b>\Dx_a$ because a larger and earlier payoff is trivially always preferred. This setup is illustrated in~\fref{basicsetup}. We note again that in this setup there is no uncertainty in the payoffs or in the times in which they are realized. Thus, there is no risk.
 %Because there is no risk, we do not specify a utility function and consider the dollar value of the payoffs.
 
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.7\textwidth]{./figures/setup.pdf}
 \caption{
-The basic setup of the model. A decision maker faces a choice at time $t_0$ between option $a$, which guarantees a payout of $\Dx_a$ at time $t_a$, and option $b$, which guarantees a payout of $\Dx_b>\Dx_a$ at time $t_b>t_a$.
+The basic setup of the model. A decision maker faces a choice at time $t_0$ between option $a$, which guarantees a payoff of $\Dx_a$ at time $t_a$, and option $b$, which guarantees a payoff of $\Dx_b>\Dx_a$ at time $t_b>t_a$.
 }
 \flabel{basicsetup}
 \end{figure}
 
-This setup corresponds to a standard question that arises in the context of temporal discounting, \eg ``would you prefer to receive \$100 tomorrow or \$200 in a month's time?'' Despite its apparent simplicity, answering this question requires additional assumptions. Or, put another way, the problem is underspecified. One extra assumption needed concerns the dynamics under which the decision-maker's wealth grows. Often it is assumed that wealth grows exponentially, compounding continuously at a constant riskless rate like funds in a savings account. Another assumption concerns the time frame of the decision, specifically whether a decision-maker accepting the earlier payout at $t_a$ is free immediately to make his next decision, or whether he must wait until the later time $t_b$ (or, indeed, some other time) before the decision can be repeated. Such assumptions are needed to compute decision-maker's maximand -- the growth rate of his wealth -- so that the options can be compared quantitatively.
+This setup corresponds to a standard question that arises in the context of temporal discounting, \eg ``would you prefer to receive \$100 tomorrow or \$200 in a month's time?'' Despite its apparent simplicity, answering this question requires additional assumptions. Or, put another way, the problem is underspecified. One extra assumption needed concerns the dynamics under which the decision-maker's wealth grows. Often it is assumed that wealth grows exponentially, compounding continuously at a constant riskless rate like funds in a savings account. Another assumption concerns the time frame of the decision, specifically whether a decision-maker accepting the earlier payoff at $t_a$ is free immediately to make his next decision, or whether he must wait until the later time $t_b$ (or, indeed, some other time) before the decision can be repeated. Such assumptions are needed to compute decision-maker's maximand -- the growth rate of his wealth -- so that the options can be compared quantitatively.
 %XXXOP or over some other $\Delta t$? As $\Delta t \to \infty$ all growth rates go to zero, and our framework becomes degenerate (it can't select an optimum). This could be interpreted as the one-shot setup.XXX
 
 We will describe four different specifications of this basic setup. In each we will calculate the growth rates, $g_a$ and $g_b$, of wealth associated with options $a$ and $b$. The decision maker prefers the option whose growth rate is larger.
 
-We will also infer the discount factor (\textit{DF}) from this analysis. This is the multiplicative factor, $\delta$, by which the later payout, $\Dx_b$, must be multiplied to equal the earlier payout, $\Dx_a$, when the payout amounts and times are such that the decision maker is indifferent between the two options. In symbols,
+We will also infer the discount factor (\textit{DF}) from this analysis. This is the multiplicative factor, $\delta$, by which the later payoff, $\Dx_b$, must be multiplied to equal the earlier payoff, $\Dx_a$, when the payoff amounts and times are such that the decision maker is indifferent between the two options ($\left(t_a,\Dx_a\right) \sim \left(t_b,\Dx_b\right)$). In symbols,
 
 \be
 \delta \equiv \left.\frac{\Dx_a}{\Dx_b}\right|_{g_a=g_b},
 \ee
-\ie the ratio of payouts under the constraint that the growth rates of wealth are equal.
-%To calculate to DF, we evaluate the ratio between the payout $\Dx_a$ and the payout $\Dx_b$ under the assumption that the the growth rates $g_a$ and $g_b$ are equal.
+\ie the ratio of payoffs under the constraint that the growth rates of wealth are equal.
+%To calculate to DF, we evaluate the ratio between the payoff $\Dx_a$ and the payoff $\Dx_b$ under the assumption that the the growth rates $g_a$ and $g_b$ are equal.
 
-As we show below, this setup predicts decisions equivalent to hyperbolic and exponential discounting under different specifications. Some specifications of the model predict preference reversal. Our model differs from many standard models in the literature by assuming that decision makers maximize the growth rate of their wealth, rather than the expected change in their utility.
+As we show below, this setup predicts decisions equivalent to hyperbolic and exponential discounting under different specifications. Some specifications of the model predict preference reversal.
+%Our model differs from many standard models in the literature by assuming that decision makers maximize the growth rate of their wealth, rather than the expected change in their utility.
 %It has been shown to be equivalent in some cases, under specific dynamics and specific utility function choices~\citep{peters2018time}. It is further discussed in~\Sref{discussion}.
 
 \section{Results}\label{sec:results}
@@ -345,9 +350,9 @@ In the first scenario, the time frame depends on the choice made. We call this t
 In the second scenario, the important element to note is that no matter which choice is made, it will not affect the timing of future choices. Said otherwise, the time frame is independent of the choice, so we say it is \textit{fixed}.
 %That is, the timing of Nate's next choice is not affected by his decision. 
 
-In our model, we must choose the time period over which the growth rates of wealth in each option are computed. We can choose it to be the time period associated with each payout, \ie $t_a-t_0$ for option $a$ and $t_b-t_0$ for option $b$. This specification corresponds to Dana's situation, the elastic time frame specification. Or we can choose it always to be the longer time period, $t_b-t_0$, resembling Nate's dilemma, the fixed time specification.
+In our model, we must choose the time period over which the growth rates of wealth in each option are computed. We can choose it to be the time period associated with each payoff, \ie $t_a-t_0$ for option $a$ and $t_b-t_0$ for option $b$. This specification corresponds to Dana's situation, the elastic time frame specification. Or we can choose it always to be the longer time period, $t_b-t_0$, resembling Nate's dilemma, the fixed time specification.
 
-%For convenience, we denote the two periods between the decision time and the known future payout times as $\Dt_a \equiv t_a-t_0$ and $\Dt_b \equiv t_b-t_0$. Additionally, we denote the known delay between the two payouts as $D \equiv t_b-t_a$.
+%For convenience, we denote the two periods between the decision time and the known future payoff times as $\Dt_a \equiv t_a-t_0$ and $\Dt_b \equiv t_b-t_0$. Additionally, we denote the known delay between the two payoffs as $D \equiv t_b-t_a$.
 
 
 %\textcolor{red}{\begin{enumerate}
@@ -355,16 +360,16 @@ In our model, we must choose the time period over which the growth rates of weal
 %    \item An author must choose %between receiving \$30,000 in advance or \$50,000 on production of a book that will take a year to write.
 %\end{enumerate}}
 
-% \textcolor{red}{In the first scenario, the time frame depends on the choice made: one week for the smaller job; one month for the larger job. If the builder chooses the smaller job, he is free to pursue other opportunities during the three-and-a-bit weeks between its completion and the completion of the larger job. But if he chooses the larger job, he can do nothing else for the whole month. Although the guaranteed payout is greater, the larger job has an opportunity cost relative to the smaller one.}
+% \textcolor{red}{In the first scenario, the time frame depends on the choice made: one week for the smaller job; one month for the larger job. If the builder chooses the smaller job, he is free to pursue other opportunities during the three-and-a-bit weeks between its completion and the completion of the larger job. But if he chooses the larger job, he can do nothing else for the whole month. Although the guaranteed payoff is greater, the larger job has an opportunity cost relative to the smaller one.}
 
-%\textcolor{red}{In the second scenario, the time frame is independent of the choice: in both cases, the author must work for one year. In particular, taking the earlier payout does not allow her (ethically, at least) to pursue other opportunities during the period between it and the later payout that she declined.}
+%\textcolor{red}{In the second scenario, the time frame is independent of the choice: in both cases, the author must work for one year. In particular, taking the earlier payoff does not allow her (ethically, at least) to pursue other opportunities during the period between it and the later payoff that she declined.}
 
 
-%\textcolor{red}{In our model, we must choose the time frame over which the growth rates of wealth in each option are computed. We can choose it to be the time period associated with each payout, \ie $\Dt_a$ for option $a$ and $\Dt_b$ for option $b$. This specification reminds us of the builder's choice and we will call it the elastic time frame specification. Or we can choose it always to be the longer time period, $\Dt_b$, resembling the author's dilemma. We will call this the fixed time frame specification.}
+%\textcolor{red}{In our model, we must choose the time frame over which the growth rates of wealth in each option are computed. We can choose it to be the time period associated with each payoff, \ie $\Dt_a$ for option $a$ and $\Dt_b$ for option $b$. This specification reminds us of the builder's choice and we will call it the elastic time frame specification. Or we can choose it always to be the longer time period, $\Dt_b$, resembling the author's dilemma. We will call this the fixed time frame specification.}
 
-%One possibility is to assume a fixed time frame -- the decision maker faces the choice every $\Dt_b$. In this case, in order to compare between the two choices, we will evaluate the growth rates between $t_0$ and $\Dt_b$ in both options. Another possible specification of time frame, is that the decision maker faces a choice after the payout is exercised, \ie after $\Dt_a$ if option $a$ was chosen and after $\Dt_b$ if option $b$ was chosen. In this case, we will evaluate the growth rate for option $a$ at time $\Dt_a$, and for option $b$ at $\Dt_b$. The former time frame will be labeled the fixed time frame and the latter the elastic time frame.
+%One possibility is to assume a fixed time frame -- the decision maker faces the choice every $\Dt_b$. In this case, in order to compare between the two choices, we will evaluate the growth rates between $t_0$ and $\Dt_b$ in both options. Another possible specification of time frame, is that the decision maker faces a choice after the payoff is exercised, \ie after $\Dt_a$ if option $a$ was chosen and after $\Dt_b$ if option $b$ was chosen. In this case, we will evaluate the growth rate for option $a$ at time $\Dt_a$, and for option $b$ at $\Dt_b$. The former time frame will be labeled the fixed time frame and the latter the elastic time frame.
 
-As described in~\Sref{model}, the wealth dynamics can also take different forms, and we will address two specific common cases: additive and multiplicative wealth dynamics. We note that under the multiplicative dynamics it is assumed that the payout itself is re-invested at the risk-free rate. For additive dynamics there is essentially no re-investment of the payout -- income in this dynamic is independent of wealth.
+As described in~\Sref{model}, the wealth dynamics can also take different forms, and we will address two specific common cases: additive and multiplicative wealth dynamics. We note that under the multiplicative dynamics it is assumed that the payoff itself is re-invested at the risk-free rate. For additive dynamics there is essentially no re-investment of the payoff -- income in this dynamic is independent of wealth.
 
 We will discuss the four specifications, as illustrated in~\fref{tree}. In each case we will: compute the growth rates $g_a$ and $g_b$ associated with each option; compare them to determine the conditions under which each option is preferred; elicit the form of temporal discounting equivalent to our decision model; and, finally, determine whether PR is predicted.
 
@@ -377,7 +382,7 @@ We will discuss the four specifications, as illustrated in~\fref{tree}. In each 
 
 \subsection{Case A -- Elastic time frame with additive dynamics}\label{sec:case_A}
 
-Specification: the period for computing the growth rate is that between the decision and the chosen payout; and the wealth dynamics are additive, with growth rate $k$.
+Specification: the period for computing the growth rate is that between the decision and the chosen payoff; and the wealth dynamics are additive, with growth rate $k$.
 
 We begin by writing down the final wealth under the two options, evaluated at $t_a$ and $t_b$ respectively:
 \bea
@@ -396,14 +401,14 @@ It follows that the criterion $g_a > g_b$ is
 \frac{\Dx_a}{t_a-t_0} > \frac{\Dx_b}{t_b-t_0}\,.
 \ee
 
-This criterion suggests that, under this specification, the only thing that matters to the decision maker is the linear payout rate of each option.
+This criterion suggests that, under this specification, the only thing that matters to the decision maker is the linear payoff rate of each option.
 
-If we treat the payment amounts, $\Dx_a$ and $\Dx_b$, and payment times, $t_a$ and $t_b$, as fixed parameters of the problem, then we can elicit the dependence of the decision on the decision time, $t_0$. When the payments are far ahead in the future, the ratio of the growth rates approaches $\lim_{t_0\to-\infty}\frac{g_a}{g_b}=\frac{\Dx_a}{\Dx_b}$, and $g_a<g_b$ since we have assumed $\Dx_a<\Dx_b$. When the earlier payment is imminent, \ie as $t_0\to t_a$, $g_a$ grows without bound while $g_b$ remains finite and so $g_a>g_b$. In other words, as time passes, our decision model under this specification predicts preference reversal from the later, larger payment to the earlier, smaller payment. This is illustrated in~\fref{caseA}.
+If we treat the payoff amounts, $\Dx_a$ and $\Dx_b$, and payoff times, $t_a$ and $t_b$, as fixed parameters of the problem, then we can elicit the dependence of the decision on the decision time, $t_0$. When the payoffs are far ahead in the future, the ratio of the growth rates approaches $\lim_{t_0\to-\infty}\frac{g_a}{g_b}=\frac{\Dx_a}{\Dx_b}$, and $g_a<g_b$ since we have assumed $\Dx_a<\Dx_b$. When the earlier payoff is imminent, \ie as $t_0\to t_a$, $g_a$ grows without bound while $g_b$ remains finite and so $g_a>g_b$. In other words, as time passes, our decision model under this specification predicts preference reversal from the later, larger payoff to the earlier, smaller payoff. This is illustrated in~\fref{caseA}.
 
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=1.0\textwidth]{./figures/reversals.eps}
-\caption{Preference reversal in case A. From left to right panel, $t_0$ increases, that is, the time of the payouts approaches, while all other parameters are unchanged. Initially, option $b$ is preferable, having the higher growth rate. At a later time $t_0=t_0^{PR}$, given by~\eref{t0PR}, both options imply equal growth, and preference reversal occurs. At later times option $a$ is preferable.}
+\caption{Preference reversal in case A. From left to right panel, $t_0$ increases, that is, the time of the payoffs approaches, while all other parameters are unchanged. Initially, option $b$ is preferable, having the higher growth rate. At a later time $t_0=t_0^{PR}$, given by~\eref{t0PR}, both options imply equal growth, and preference reversal occurs. At later times option $a$ is preferable.}
 \flabel{caseA}
 \end{figure}
 
@@ -415,12 +420,12 @@ If we treat the payment amounts, $\Dx_a$ and $\Dx_b$, and payment times, $t_a$ a
 %\put(270,0){\includegraphics[width=0.39\textwidth]{./figures/reversal_3.pdf}}
 %\end{picture}
 %\caption{
-%Preference reversal in case A. From left to right panel, $t_0$ increases, that is, the time of the payouts approaches, while all other parameters are unchanged. Initially, option $b$ is preferable, having the higher growth rate. At a later time $t_0=t_0^{PR}$, given by \eref{t0PR}, both options imply equal growth, and preference reversal occurs. At later times option $a$ is preferable. 
+%Preference reversal in case A. From left to right panel, $t_0$ increases, that is, the time of the payoffs approaches, while all other parameters are unchanged. Initially, option $b$ is preferable, having the higher growth rate. At a later time $t_0=t_0^{PR}$, given by \eref{t0PR}, both options imply equal growth, and preference reversal occurs. At later times option $a$ is preferable. 
 %}
 %\flabel{caseA}
 %\end{figure}
 
-%It shows that the payout rate of option $b$ is higher than that of option $a$, which makes it preferable. This holds for some time. However, at some point in time, this changes and the payout rate of option $a$ would be higher. Assuming that initially option $g_b > g_a$, there will always be a point in time in which PR will occur. If time $\tau$ elapsed from $t_0$, than the updated payout rates of options $a$ and $b$ are $\frac{\Dx_a}{\Dt_a - \tau}$ and $\frac{\Dx_b}{\Dt_b - \tau}$, respectively. The reversal will occur when these are equal, or
+%It shows that the payoff rate of option $b$ is higher than that of option $a$, which makes it preferable. This holds for some time. However, at some point in time, this changes and the payoff rate of option $a$ would be higher. Assuming that initially option $g_b > g_a$, there will always be a point in time in which PR will occur. If time $\tau$ elapsed from $t_0$, than the updated payoff rates of options $a$ and $b$ are $\frac{\Dx_a}{\Dt_a - \tau}$ and $\frac{\Dx_b}{\Dt_b - \tau}$, respectively. The reversal will occur when these are equal, or
 %\be
 %\tau_{\text{reversal}} = \frac{\Dt_a\Dx_b - \Dt_b\Dx_a}{\Dx_b - \Dx_a}\,.
 %\ee
@@ -435,20 +440,20 @@ We can also find the effective discount factor under this specification. When $g
 \be
 \delta = \frac{\Dx_a}{\Dx_b} = \frac{t_a-t_0}{t_b-t_0} = \frac{1}{1+\frac{t_b-t_a}{t_a-t_0}},
 \ee
-where we have made the final manipulation to express $\delta$ in hyperbolic form. We see that the discount factor depends on two time periods: that between decision and the earlier payout, $t_a-t_0$, which we will call the \textit{horizon}; and that between the two payouts, $t_b-t_a$, which we which we will call the \textit{delay}.\footnote{Indeed, the problem is fully specified by these two time periods and the two payout amounts. The actual times, $t_0$, $t_a$, $t_b$, are not needed to specify the problem because, when computing growth rates, only elapsed times matter. The time origin is arbitrary.} If we define $\hor\equiv t_a-t_0$ and $\del\equiv t_b-t_a$, we can write the discount factor as
+where we have made the final manipulation to express $\delta$ in hyperbolic form. We see that the discount factor depends on two time periods: that between decision and the earlier payoff, $t_a-t_0$, which we will call the \textit{horizon}; and that between the two payoffs, $t_b-t_a$, which we which we will call the \textit{delay}.\footnote{Indeed, the problem is fully specified by these two time periods and the two payoff amounts. The actual times, $t_0$, $t_a$, $t_b$, are not needed to specify the problem because, when computing growth rates, only elapsed times matter. The time origin is arbitrary.} If we define $\hor\equiv t_a-t_0$ and $\del\equiv t_b-t_a$, we can write the discount factor as
 \be
 \delta = \frac{1}{1+\del/\hor},
 \ee
-which is expressed in the conventional way as a hyperbolic function of the delay, $\del$. The psychological degree of discounting parameter used in mainstream models is replaced here by $1/\hor$, the reciprocal of the horizon. As the horizon gets shorter, $1/\hor$ becomes larger, $\delta$ gets smaller, and the later payout becomes less favorable. No knowledge of the decision-maker's psychology is required in this setup -- only the postulate that she prefers her wealth to grow faster.
+which is expressed in the conventional way as a hyperbolic function of the delay, $\del$. The psychological degree of discounting parameter used in mainstream models is replaced here by $1/\hor$, the reciprocal of the horizon. As the horizon gets shorter, $1/\hor$ becomes larger, $\delta$ gets smaller, and the later payoff becomes less favorable. No knowledge of the decision-maker's psychology is required in this setup -- only the postulate that she prefers her wealth to grow faster rather than slower.
 
-%The discount factor, $\delta$, is the factor by which the later payout, $\Dx_b$, must be multiplied to equal the earlier payout, $\Dx_a$, under indifference between options $a$ and $b$. Practically, it can be found by considering the equality of growth rates $g_a$ and $g_b$, which is the condition for indifference. $\delta$ is typically presented as a function of the time difference between options. In our setup this would be $\Epsilon \equiv \Dt_b - \Dt_a$.
+%The discount factor, $\delta$, is the factor by which the later payoff, $\Dx_b$, must be multiplied to equal the earlier payoff, $\Dx_a$, under indifference between options $a$ and $b$. Practically, it can be found by considering the equality of growth rates $g_a$ and $g_b$, which is the condition for indifference. $\delta$ is typically presented as a function of the time difference between options. In our setup this would be $\Epsilon \equiv \Dt_b - \Dt_a$.
 %
 %\textcolor{red}{
-%Now that we have the hyperbolic DF in terms of the delay, $\Dt_b-\Dt_a$, and the time to the first payout, $\Dt_a$, as
+%Now that we have the hyperbolic DF in terms of the delay, $\Dt_b-\Dt_a$, and the time to the first payoff, $\Dt_a$, as
 %\be
 %\delta = \frac{1}{1+\frac{\Dt_b-\Dt_a}{\Dt_a}} = \frac{1}{1+kD},
 %\ee
-%it would be much clearer to present PR as a consequence of changing the time to the first payout rather than the reference time. Then $t_0\to t_0+\Dt_a$ is simply $\Dt_a\to0$, which is also expressible as $k\to\infty$. This minor reframing will require some changes below, including to the figure, because we would treat $t_0$ as fixed and $\Dt_a$ as movable.
+%it would be much clearer to present PR as a consequence of changing the time to the first payoff rather than the reference time. Then $t_0\to t_0+\Dt_a$ is simply $\Dt_a\to0$, which is also expressible as $k\to\infty$. This minor reframing will require some changes below, including to the figure, because we would treat $t_0$ as fixed and $\Dt_a$ as movable.
 %}
 %\textcolor{red}{
 %Do we need $\Epsilon$? The letter has no intuitive meaning (to me) and perhaps we can get away without relabelling $\Dt_b-\Dt_a$. If not, $D$ for delay or $W$ for wait might be better.
@@ -463,11 +468,11 @@ which is expressed in the conventional way as a hyperbolic function of the delay
 %
 %This is exactly hyperbolic discounting with degree of discounting $\kappa = \frac{1}{\Dt_a}$.
 
-Finally, we note that the background growth rate, $k$, of the decision-maker's wealth does not appear in the decision criterion. This is because wealth growth under additive dynamics is not affected by exogenous cash flows: the gain $k\Dt$ over period $\Dt$ occurs regardless of other payouts received. This contrasts with multiplicative dynamics, where payouts can be subjected to the growth process through re-investment.
+Finally, we note that the background growth rate, $k$, of the decision-maker's wealth does not appear in the decision criterion. This is because wealth growth under additive dynamics is not affected by exogenous cash flows: the gain $k\Dt$ over period $\Dt$ occurs regardless of other payoffs received. This contrasts with multiplicative dynamics, where payoffs can be subjected to the growth process through re-investment.
 
 \subsection{Case B -- Elastic time frame with multiplicative dynamics}\label{sec:case_B}
 
-Specification: the time frame for computing the growth rate is time to the chosen payout; and the wealth dynamics are multiplicative, with growth rate $r$.
+Specification: the time frame for computing the growth rate is time to the chosen payoff; and the wealth dynamics are multiplicative, with growth rate $r$.
 
 We follow the same steps as in case A. Wealth evolves to:
 \bea
@@ -483,7 +488,7 @@ g_b &= \frac{1}{t_b-t_0} \log{\left(\frac{x_b\left(t_b\right)}{x\left(t_0\right)
 
 This setting displays preference reversal: $g_a<g_b$ for $t_0$ sufficiently far away from $t_a$ (long horizon); and $g_a>g_b$ for $t_0$ sufficiently close to $t_a$ (short horizon). No closed-form expression for the reversal time, $t_0^\text{PR}$, is available.
 
-Similarly, the discount factor $\delta$ cannot be derived explicitly. However, if we assume small payouts relative to wealth, \ie $\Dx_a \ll x\left(t_0\right)e^{r(t_a-t_0)}$ and $\Dx_b \ll x\left(t_0\right)e^{r(t_b-t_0)}$, then, setting $g_a=g_b$ and using the first-order approximation $\log(1+\epsilon)\approx\epsilon$ for $\epsilon\ll1$, we get
+Similarly, the discount factor $\delta$ cannot be derived explicitly. However, if we assume small payoffs relative to wealth, \ie $\Dx_a \ll x\left(t_0\right)e^{r(t_a-t_0)}$ and $\Dx_b \ll x\left(t_0\right)e^{r(t_b-t_0)}$, then, setting $g_a=g_b$ and using the first-order approximation $\log(1+\epsilon)\approx\epsilon$ for $\epsilon\ll1$, we get
 \be
 \delta = \frac{\Dx_a}{\Dx_b} \approx \frac{(t_a-t_0)e^{r(t_a-t_0)}}{(t_b-t_0)e^{r(t_b-t_0)}} =
 \frac{e^{r(t_a-t_b)}}{1+\frac{t_b-t_a}{t_a-t_0}}\,.
@@ -497,11 +502,10 @@ which is a hybrid of hyperbolic and exponential discounting. We note again that 
 Case B also displays another type of preference reversal. Varying initial wealth $x(t_0)$ while keeping all other parameters fixed can lead to a switch from $g_a>g_b$ to $g_a<g_b$, as illustrated in~\fref{reversal_B}.
 %An example is given in panel A of \fref{reversal_2}, and 
 
-
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=1.0\textwidth]{./figures/reversals_B.eps}
-\caption{Preference reversal in response to wealth changes, in case B, logarithmic vertical scales. Initial wealth $x(t_0)$ increases from left to right panel (\$500, \$2277, \$5,000), while all other parameters are unchanged ($t_0=$ today, $t_a=1$~year from today, $t_b=2$~years from today, $\Dx_a=\$1000$, $\Dx_b=\$2500$, $r=0.03$~per annum). At low wealth, option $a$ is preferable, having the higher growth rate, according to~\eref{ga_B} and~\eref{gb_B}. At a greater wealth, $x(t_0)^{PR}\approx \$2277$, both options imply equal growth, and preference reversal occurs. At even greater wealth, option $b$ is preferable: the poor behave optimally by choosing the small early payout.}
+\caption{Preference reversal in response to wealth changes, in case B, logarithmic vertical scales. Initial wealth $x(t_0)$ increases from left to right panel (\$500, \$2277, \$5,000), while all other parameters are unchanged ($t_0=$ today, $t_a=1$~year from today, $t_b=2$~years from today, $\Dx_a=\$1000$, $\Dx_b=\$2500$, $r=0.03$~per annum). At low wealth, option $a$ is preferable, having the higher growth rate, according to~\eref{ga_B} and~\eref{gb_B}. At a greater wealth, $x(t_0)^{PR}\approx \$2277$, both options imply equal growth, and preference reversal occurs. At even greater wealth, option $b$ is preferable: the poor behave optimally by choosing the small early payoff.}
 \flabel{reversal_B}
 \end{figure}
 
@@ -513,17 +517,17 @@ Case B also displays another type of preference reversal. Varying initial wealth
 %\put(270,0){\includegraphics[width=0.39\textwidth]{./figures/reversal_B_3.pdf}}
 %\end{picture}
 %\caption{
-%Preference reversal in response to wealth changes, in case B, logarithmic vertical scales. Initial wealth $x(t_0)$ increases from left to right panel (\$500, \$2277, \$5,000), while all other parameters are unchanged ($t_0=$ today, $t_a=1$~year from today, $t_b=2$~years from today, $\Dx_a=\$1000$, $\Dx_b=\$2500$, $r=0.03$~per annum). At low wealth, option $a$ is preferable, having the higher growth rate, according to \eref{ga_B} and \eref{gb_B}. At a greater wealth, $x(t_0)^{PR}\approx \$2277$, both options imply equal growth, and preference reversal occurs. At even greater wealth, option $b$ is preferable: the poor behave optimally by choosing the small early payout.
+%Preference reversal in response to wealth changes, in case B, logarithmic vertical scales. Initial wealth $x(t_0)$ increases from left to right panel (\$500, \$2277, \$5,000), while all other parameters are unchanged ($t_0=$ today, $t_a=1$~year from today, $t_b=2$~years from today, $\Dx_a=\$1000$, $\Dx_b=\$2500$, $r=0.03$~per annum). At low wealth, option $a$ is preferable, having the higher growth rate, according to \eref{ga_B} and \eref{gb_B}. At a greater wealth, $x(t_0)^{PR}\approx \$2277$, both options imply equal growth, and preference reversal occurs. At even greater wealth, option $b$ is preferable: the poor behave optimally by choosing the small early payoff.
 %}
 %\flabel{reversal_B}
 %\end{figure}
 
-The difference $g_a-g_b$, from~\eref{ga_B} and~\eref{gb_B}, is shown as a function of $x(t_0)$ in~\fref{reversal_B2}. This type of preference reversal can be expressed as follows: under certain circumstances, it is growth-optimal for people of lower wealth to choose a small early payout, whereas it is growth-optimal for wealthier individuals to hold out until the later larger payout. This predicts the findings of~\citet{epper2018time}, who find that ``individuals with relatively low time discounting are consistently positioned higher in the wealth distribution''.
+The difference $g_a-g_b$, from~\eref{ga_B} and~\eref{gb_B}, is shown as a function of $x(t_0)$ in~\fref{reversal_B2}. This type of preference reversal can be expressed as follows: under certain circumstances, it is growth-optimal for people of lower wealth to choose a small early payoff, whereas it is growth-optimal for wealthier individuals to hold out until the later larger payoff. This predicts the findings of~\citet{epper2018time}, that ``individuals with relatively low time discounting are consistently positioned higher in the wealth distribution''.
 
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.7\textwidth]{./figures/ga_gb.pdf}
-\caption{The difference $g_a-g_b$ is positive when the earlier payout is preferable, and otherwise negative. We see that for small initial wealths $x(t_0)$ the earlier smaller payout is preferred, whereas for large initial wealth the later larger payout is preferred (parameters as in \fref{reversal_B}).}
+\caption{The difference $g_a-g_b$ is positive when the earlier payoff is preferable, and otherwise negative. We see that for small initial wealths $x(t_0)$ the earlier smaller payoff is preferred, whereas for large initial wealth the later larger payoff is preferred (parameters as in~\fref{reversal_B}).}
 \flabel{reversal_B2}
 \end{figure}
 
@@ -541,13 +545,13 @@ g_b &=& \frac{x_b\left(t_b\right) - x\left(t_0\right)}{t_b-t_0} = \frac{\Dx_b}{t
 \eea
 Note that the wealth and its growth rate under option $b$ are the same as in case A, since they were already evaluated at $t_b$ there.
 
-Since we have assumed $\Dx_b > \Dx_a$, option $b$ is always preferred to option $a$. This is a trivial case -- if we assume additive wealth dynamics and comparing the growth rates at the same time (or assuming repetition over fixed periods), then the only thing that matters to the decision-maker is payout size. In this case, the discount factor $\delta$ cannot be defined, since the later, larger payout is always preferred and the indifference condition is never satisfied.
+Since we have assumed $\Dx_b > \Dx_a$, option $b$ is always preferred to option $a$. This is a trivial case -- if we assume additive wealth dynamics and comparing the growth rates at the same time (or assuming repetition over fixed periods), then the only thing that matters to the decision-maker is payoff size. In this case, the discount factor $\delta$ cannot be defined, since the later, larger payoff is always preferred and the indifference condition is never satisfied.
 
 \subsection{Case D -- Fixed time frame with multiplicative dynamics}\label{sec:case_D}
 
-Finally, we assume multiplicative dynamics and a fixed time frame. This is the specification that corresponds to the standard assumptions usually considered in temporal discounting -- that wealth is continuously compounding at the risk-free rate and that payouts are re-invested at this rate.
+Finally, we assume multiplicative dynamics and a fixed time frame. This is the specification that corresponds to the standard assumptions usually considered in temporal discounting -- that wealth is continuously compounding at the risk-free rate and that payoffs are re-invested at this rate.
 
-The chief difference from case B is that the earlier payout, $\Dx_a$, if chosen, is treated as growing exponentially from $t_a$ to $t_b$. The wealths evolve from $t_0$ to $t_b$ as follows:
+The chief difference from case B is that the earlier payoff, $\Dx_a$, if chosen, is treated as growing exponentially from $t_a$ to $t_b$. The wealths evolve from $t_0$ to $t_b$ as follows:
 \bea
 x_a\left(t_b\right) &=& x\left(t_0\right) e^{r(t_b-t_0)} + \Dx_a e^{r(t_b-t_a)}\,;\\
 x_b\left(t_b\right) &=& x\left(t_0\right) e^{r(t_b-t_0)} + \Dx_b\,.
@@ -569,26 +573,28 @@ or, in terms of the delay, if
 \Dx_a e^{r\del} > \Dx_b\,.
 \ee
 
-The discount factor is similarly easily expressed by setting the growth rates to be equal. Then we get $\Dx_a e^{r\del} = \Dx_b$ and
+The discount factor is similarly expressed by setting the growth rates to be equal. Then we get $\Dx_a e^{r\del} = \Dx_b$ and
 \be
 \delta = \frac{\Dx_a}{\Dx_b} = e^{-r\del}\,,
 \ee
-which is the standard exponential discounting result. The interpretation is straightforward: if it is possible to re-invest the earlier payout such that, by the time of the later payout, it will exceed the later payout amount, then option $a$ is preferable to option $b$ (and \textit{vice versa}). Note that, with this specification, the horizon is irrelevant. All that matters is the payout amount after possible re-investment.
+which is the standard exponential discounting result. The interpretation is straightforward: if it is possible to re-invest the earlier payoff such that, by the time of the later payoff, it will exceed the later payoff amount, then option $a$ is preferable to option $b$ (and \textit{vice versa}). Note that, with this specification, the horizon is irrelevant. All that matters is the payoff amount after possible re-investment.
 
 \section{Discussion}\label{sec:discussion}
 
-This paper describes a model in which a decision maker chooses between two payouts realized at different points in time by comparing the growth rate of wealth associated with each option.
+This paper describes a model in which a decision maker chooses between two certain payoffs realized at different, certain points in time. We assume that a decision is made by comparing the growth rate of wealth associated with each option. We then study temporal discounting in a deterministic setting. In this setting the model is consistent with the standard von Neumann-Morgenstern axioms.
 
-The main finding is that discounting can be interpreted as growth rate optimization. We find that depending on the wealth dynamics assumed by the decision maker, growth rate optimization can be equivalent to hyperbolic discounting, in which case it predicts preference reversal. It can also be equivalent to a mixed case of hyperbolic and exponential discounting, which also implies preference reversal. Under multiplicative dynamics, we find that growth-rate optimization reproduces standard exponential discounting. This reveals the standard form of discounting as just one of many possible forms of discounting, each of which is optimal under a different type of wealth growth.
+The main finding is that discounting can be interpreted as growth rate optimization. We find that depending on the wealth dynamics assumed by the decision maker, growth rate optimization can be equivalent to hyperbolic discounting. It then predicts preference reversal. It can also be equivalent to a mixed case of hyperbolic and exponential discounting, which also implies preference reversal. Under multiplicative dynamics, we find that growth rate optimization reproduces standard exponential discounting. This reveals the standard form of discounting as one of many possible forms of discounting, each of which is optimal under a different type of wealth growth.
+
+The model predicts another type of reversal under multiplicative dynamics. It can be growth-optimal for people of lower wealth to choose a small early payoff, whereas it is growth-optimal for wealthier individuals to hold out until the later larger payoff. This is inline with the experimental and empirical findings of~\citet{epper2018time}, that ``individuals with relatively low time discounting are consistently positioned higher in the wealth distribution''.
+
+We emphasize that no knowledge of the decision-maker's psychology is required in our setup -- only the postulate that she prefers her wealth to grow faster rather than slower. This postulate is enough for to predicting a decision maker's discount rates used in mainstream models. Yet, we also note that this paper discusses discounting from a theoretical perspective. An important complementary step of this research would be comparing the theoretical predictions of the results to empirical and experimental results. In particular, the predicted discount factors and discount rates can be compared to results from controlled experiments. This is planned for future work.
 
 %A fundamental question about the model is why would someone maximize growth instead of expectation value of utility? This, of course, differs from the traditional framework for analyzing decisions in economics, usually taking it as axiomatic that people maximize utility. Yet, this is only one way of studying optimal choice under different conditions. At the same time it is important to note that without risk, the choice axiom used in this paper, 
 %it is important to question where does the utility optimizing mechanism come from?
 
 %The framework we used here has an answer -- evolutionary mechanisms. That is, as time passes some utility functions dominate over others. The utility functions that do so over the long run are growth-optimal. Technically, they are ergodicity mappings: maximizing the expected value of such a utility function is guaranteed to maximize wealth over time.
 
-This paper discusses discounting from a theoretical perspective. An important complementary step of this research would be comparing the theoretical predictions of the results to empirical and experimental results. In particular, the predicted discount factors and discount rates can be compared to results from controlled experiments. This is planned for future work.
-
-%An additional extension is the inclusion of risk. The standard explanations to hyperbolic discounting consist of a behavioral response to risk~\citep{sozou1998hyperbolic,dasgupta2005uncertainty}, while here we showed that hyperbolic discounting can be observed even in the absence of uncertainties in the payouts or in their timing. Adding uncertainty to our model might create additional forms of temporal discounting, which might be more realistic and closer to empirical evidence.
+%An additional extension is the inclusion of risk. The standard explanations to hyperbolic discounting consist of a behavioral response to risk~\citep{sozou1998hyperbolic,dasgupta2005uncertainty}, while here we showed that hyperbolic discounting can be observed even in the absence of uncertainties in the payoffs or in their timing. Adding uncertainty to our model might create additional forms of temporal discounting, which might be more realistic and closer to empirical evidence.
 %XXXOP: we have already done the random case. That's what we usually do. Ergodic growth rate optimization includes randomness, it's just interesting that even without randomness, i.e. just discounting, we also recover a lot of known results.
 
 
