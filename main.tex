@@ -185,8 +185,8 @@ urlcolor={blue!50!black}}
 \date{\today}
 \maketitle
 \begin{abstract}
-\noindent An important question in economics is how people evaluate payouts in the future. The standard phrasing of the problem is in part psychological. The value we attach to a future payout is the dollar value of the payout discounted by a factor whose functional form is determined subjectively and whose (objective) argument is how long we have to wait for the payout. Here we present an interpretation of temporal discounting in terms of growth rates. A payout in the future, we posit, is often viewed as a growth rate of wealth averaged over the time until the payout. Choosing the greatest multiplicative growth rate is mathematically equivalent to exponential discounting. Maximizing the additive growth rate is equivalent to hyperbolic discounting. We detect possible cases of preference reversal under different forms of discounting.
-%An important question in economics is how people evaluate payouts in the future. The standard phrasing of the problem is in part psychological: the value we attach to a future payout is the dollar value of the payout discounted by a factor whose functional form is determined by our subjective psychology and whose (objective) argument is how long we have to wait for the payout. The functional form is called the ``discounting function'', in practice commonly exponential or hyperbolic. Here we present an interpretation of these forms in terms of growth rates. A payout in the future, we posit, is often viewed as a growth rate of wealth averaged over the time until the payout. Choosing the greatest multiplicative growth rate is mathematically equivalent to exponential discounting, while maximising the additive growth rate is equivalent to hyperbolic discounting. Multiplicative and additive processes are important models of wealth evolution, corresponding approximately to unearned and earned income. Other growth processes result in different discounting functions.
+\noindent An important question in economics is how people evaluate payments in the future. The standard phrasing of the problem is in part psychological. The value we attach to a future payment is the dollar value of the payment discounted by a factor whose functional form is determined subjectively and whose (objective) argument is how long we have to wait for the payment. Here we explore how discounting arises from growth rate optimization, in four specifications of a Certain Intertemporal Payment Problem (CIPP). Exponential discounting is recovered as optimizing a multiplicative growth rate, and hyperbolic discounting as optimizing an additive growth rate. Preference reversal occurs in two of the specifications we study.
+%An important question in economics is how people evaluate payments in the future. The standard phrasing of the problem is in part psychological: the value we attach to a future payment is the dollar value of the payment discounted by a factor whose functional form is determined by our subjective psychology and whose (objective) argument is how long we have to wait for the payment. The functional form is called the ``discounting function'', in practice commonly exponential or hyperbolic. Here we present an interpretation of these forms in terms of growth rates. A payment in the future, we posit, is often viewed as a growth rate of wealth averaged over the time until the payment. Choosing the greatest multiplicative growth rate is mathematically equivalent to exponential discounting, while maximising the additive growth rate is equivalent to hyperbolic discounting. Multiplicative and additive processes are important models of wealth evolution, corresponding approximately to unearned and earned income. Other growth processes result in different discounting functions.
 \\
 \\
 \noindent\textbf{Keywords: Decision theory, Hyperbolic discounting, Ergodicity economics}
@@ -204,28 +204,26 @@ urlcolor={blue!50!black}}
 
 \section{Introduction}\label{sec:introduction}
 
-This paper studies temporal discounting without uncertainty. Without uncertainty and for a single, certain point in time, a choice between two payouts is trivial -- a larger payout would be preferable over a lower payout. What would happen if the payouts are given at different, yet still certain points in time?
+This paper studies temporal discounting in a deterministic setting. In our model a decision maker chooses between two known and different payoffs to be received at known and different times by comparing the growth rates of wealth associated with each option. The model is further specified by assumptions about the wealth dynamics of the decision maker and the time frame of the decision. Depending on the specification, the model produces different forms of discounting -- including exponential and hyperbolic.
 
-Our model consists of a decision maker, who chooses between two known and different payouts to be received at known and different times by comparing the growth rates of total wealth associated with each option. The model is further specified by assumptions about the wealth dynamics of the decision maker and the time frame of the decision. In some specifications, the model produces forms of discounting -- including hyperbolic.
+Preference reversal (\textit{PR}) is a behavioral phenomenon documented during the past half a century in many studies in economics and psychology~\citep{lichtenstein1971reversals,lindman1971inconsistent,grether1979economic,loomes1983rationale,tversky1990causes,ainslie1992picoeconomics,laibson1997golden}. It takes various forms in different contexts. In its original psychological context~\citep{tversky1969intransitivity,lichtenstein1971reversals} it refers to the intransitivity in decision making under uncertainty. It also refers to the phenomenon in which a decision maker changes his mind between two options as time passes. 
 
-Preference reversal (\textit{PR}) is a behavioral phenomenon documented during the past half a century in many studies in economics and psychology~\citep{lichtenstein1971reversals,lindman1971inconsistent,grether1979economic,loomes1983rationale,tversky1990causes,ainslie1992picoeconomics,laibson1997golden}. It takes various forms in different contexts. In its original psychological context~\citep{tversky1969intransitivity,lichtenstein1971reversals} it refers to the intransitivity in decision making under uncertainty. It also refers to the phenomenon in which a decision maker changes his mind between two options as time passes. Our model predicts several types of PR in various specifications.
-
-In some specifications, the model recovers standard exponential discounting, which does not predict PR. Thus, we propose that a model that assumes a growth rate maximizing decision maker under various assumptions is consistent with a wide range of experimental evidence.
+In our model PR is a consequence of growth rate optimization. Specifications that lead to standard exponential discounting do not generate PR, but others do. The dynamic and time frame specification reflect the situation of a decision maker. Thus a single behavioral algorithm, a single optimand, is consistent with a range of observed behaviors if the situation of the decision maker is formally taken into account.
 
 %This approach is similar to~\citet{Radner1998} -- he assumed that firms maximize their survival rate, which is a special case of maximizing the growth rate. To see why we note that if a strategy results in non-survival, then the growth rate for it will be zero. 
 %XXX OP: zero growth rate means maintaining status quo, not death... XXX
 %He further shows that firms that maximize the probability of survival, will outcompete those which maximize profits and hence, in the long run there will only be survival maximizing firms.
 %XXX OP: not sure this is true, but I don't know what the terms mean. I can easily imagine a situation where I can guarantee survival at zero growth, and a little risk gets a big reward, which may well lead to outperformance despite the risk of non-survival.XXX
 
-The main contribution of this paper is the prediction of PR and hyperbolic discounting from considerations that do not violate the standard von Neumann-Morgenstern axioms, and in the absence of risk. These phenomena are demonstrated without being inconsistent with standard exponential discounting. The importance of these findings lies in the absence of rationality criteria. The same model and the same criteria can produce different types of discounting. We stress that the importance lies in specifying the dynamics of the decision problem in question. Thus, the implications of our results go even further. They provide a prediction for the form of discounting without specifying individual preferences, or a specific shape of utility function. 
+This paper predicts hyperbolic discounting, and hence PR, from considerations that do not violate the standard von Neumann-Morgenstern axioms. Our framework does not assume any form of irrationality or inconsistency on the part of the decision maker. Changes in the type of discounting come from different dynamics and time frames, \ie properties of the situation of the decision maker, not properties of the decision maker himself. Thus, utility functions or temporal preferences are not part of our model specification -- such apparently idiosyncratic properties can be derived from a full specification of the situation.
 
-The paper also contributes to the growing branch of ergodicity economics~\citep{peters2016evaluating,berman2016far,peters2018time}, which proposes an alternative to mainstream decision theories, such as expected utility theory and prospect theory, namely that agents maximize the growth of their resources averaged over time. This joins recent evidence on the effect changes in the dynamics of wealth have on decision makers under uncertainty~\citep{hulme2019unpublished}.
+The paper also contributes to the growing branch of ergodicity economics~\citep{peters2016evaluating,berman2016far,peters2018time}, which proposes an alternative to mainstream decision theories, such as expected utility theory and prospect theory, namely that agents maximize the growth of their resources averaged over time. This joins recent evidence of a strong effect of changes to the wealth dynamic on choices under uncertainty~\citep{MederETAL2019}.
 
 The paper is organized as follows.~\Sref{model} lays out our model and the basic setup of the problem we are addressing. In~\Sref{results} we present different specifications for the problem in question. We describe how a decision maker will discount payouts in each specification under our model, giving rise to preference reversal. We conclude in~\Sref{discussion}.
 
 \subsection{Related literature}
 
-Observed PR phenomena puzzled economics, leading to various explanations and theories. One theory that gives rise to PR is hyperbolic discounting~\citep{ainslie1992picoeconomics,sozou1998hyperbolic,laibson1997golden}, suggesting that the valuation of choices falls hyperbolically in time. 
+Observations of PR have led to various explanations and theories. One such theory is hyperbolic discounting~\citep{ainslie1992picoeconomics,sozou1998hyperbolic,laibson1997golden}, suggesting that the valuation of choices falls hyperbolically in time. 
 %This means that decision makers may favor earlier guaranteed reward over higher later reward, in a way that is inconsistent with standard economic theory. 
 This is in contrast to the standard assumption of exponential discounting in economic theory, where no such reversal occurs.
 Hyperbolic discounting has been established as a plausible explanation for PR. 
@@ -233,13 +231,18 @@ Yet, the dynamically inconsistent preferences it induces have challenged standar
 %This questions some of the basic axioms of expected utility theory, which predicts exponential discounting, \ie valuation of choices that falls exponentially in time.
 %In what sense does EUT predict exponential discounting?
 
-\citet{rubinstein2003economics} suggested that the same experiments supporting hyperbolic discounting, can also be used to reject it under different axioms. In addition, various behavioral explanations for hyperbolic discounting have been given in the economic literature. One approach is to place the conditions on the information of decision makers.~\citet{sozou1998hyperbolic,dasgupta2005uncertainty} suggested that a decision maker is learning over time, which allows for PR. This approach implicitly assumes constructivist rationality similar to that of~\citet{smith2003constructivist}. In the most basic sense, the methodological approach is to posit the cognitive situation of the agent and to deduce his discounting rule.
+\citet{rubinstein2003economics} suggested that the same experiments supporting hyperbolic discounting, can also be used to reject it under different axioms. In addition, various behavioral explanations for hyperbolic discounting have been given in the economics literature. One approach considers the information available to decision makers.~\citet{sozou1998hyperbolic,dasgupta2005uncertainty} suggested that decision makers learn over time, which can lead to PR. This approach implicitly assumes constructivist rationality similar to that of~\citet{smith2003constructivist}. In the most basic sense, the methodological approach is to posit the cognitive situation of the agent and to deduce a discounting rule.
 
-The reasoning behind the model of~\citet{sozou1998hyperbolic}, for example, is that agents do not know the hazard rate of an event and learn about the hazard rate over time. The logic behind this is that the agents use Bayesian updating to gradually learn over time, the longer an event does not occur, the more likely it is that it will not occur (decreasing hazard rate). Using this approach, it is shown that an exponential distribution yields hyperbolic discounting.
+The reasoning behind the model of~\citet{sozou1998hyperbolic}, for example, is that agents do not know the hazard rate of a random event and learn about it over time through Bayesian updating. Thus, the longer an event does not occur, the more likely it is that it will not occur (decreasing estimated hazard rate). Using this approach, it is shown that an exponential distribution yields hyperbolic discounting.
+XXXOP: exponential distribution of what? Waiting times? For a Poisson process that's always true, so do we need to mention the exponential distribution here? When I read ``hazard rate'' I think of a Poisson process -- is this something different?
 
-On the other hand,~\citet{dasgupta2005uncertainty} assume that the agent knows that an event will occur for certain but it is unclear when. The mechanics behind the model are that since an event will occur at some future time, the closer we are to that future time the more certain one of the events will occur very soon. This is because it is initially assumed that the probability of early realizations is the same for both gambles. This, in turn, means that the chance for early realization is more valuable for larger payouts than smaller payouts. They later extend their result to say that the density is not the same but that the probability of one event increases relatively more over time which allows for a wider class of hazard functions. This provides a model for how hyperbolic discounting can describe PR under uncertainty.
+On the other hand,~\citet{dasgupta2005uncertainty} assume that the agent knows that an event will occur but not when. The mechanics behind the model are that since an event will occur by some future time, the closer we are to that future time the more certain one of the events will occur very soon. This is because it is initially assumed that the probability of early realizations is the same for both gambles. This, in turn, means that the chance for early realization is more valuable for larger payouts than smaller payouts. They later extend their result to say that the density is not the same but that the probability of one event increases relatively more over time which allows for a wider class of hazard functions. This provides a model for how hyperbolic discounting can describe PR under uncertainty.
+
+XXXOP: I didn't understand this paragraph. Also final sentence: hyperbolic discounting implies PR, so finding a reason for hyperbolic discounting means also finding a reason for PR.
 
 It is important to note that all the different approaches to hyperbolic discounting in the literature involve some form of uncertainty. As described, this paper discusses temporal discounting, and in particular hyperbolic discounting and preference reversal phenomena, without the need to introduce uncertainty.
+
+XXXOP: really? Discounting (though maybe not hyperbolic discounting?) as an idea is much older than utility theory. So it existed long before any probabilistic treatments. Our reason for believing that people might discount hyperbolically is then very different. The idea is that those who experience wealth as an additive process (e.g. if wealth changes are dominated by earned income and consumption) would intuitively be used to operating with additive growth rates, i.e. hyperbolic discounting.
 
 \section{Model}\label{sec:model}
 
@@ -250,31 +253,33 @@ We begin by defining a \textit{Certain Intertemporal Payment Problem} (CIPP).
 A Certain Intertemporal Payment Problem (CIPP) is a vector $\{t_0,x\left(t_0\right),t_a,\Dx_a,t_b,\Dx_b\}$ -- a decision maker at time $t_0$ with wealth $x\left(t_0\right)$, chooses between two future cash payouts, one earlier than the other, whose amounts and payout times are known with certainty. The two options are:
 
 \begin{enumerate}
-\item[$a$.] an earlier payout of $\Dx_a>\$ 0$ at time $t_a>t_0$; and
-\item[$b$.] a later payout of $\Dx_b>\Dx_a$ at time $t_b>t_a$.
+\item[$a$.] an earlier payment of $\Dx_a$ at time $t_a>t_0$; and
+\item[$b$.] a later payment of $\Dx_b>\Dx_a$ at time $t_b>t_a$.
 \end{enumerate}
 
 \end{definition}
 
-Our aim is to present a criterion for choosing $a$ or $b$. For this purpose it is necessary to introduce the concept of growth rates. A growth rate is defined as the scale parameter of time for an underlying dynamic of wealth. Wealth dynamics can take different forms. A standard assumption would be that wealth grows exponentially in time, at a riskless rate $r$. We label this dynamic as multiplicative. This dynamic corresponds to investing wealth in income-generating assets, in which the income is proportional to the amount invested. This is the dynamic traditionally assumed in temporal discounting, and when present values are calculated of future expected payouts. In this case, and in the absence of risk, wealth follows
+A formal decision theory has to provide a criterion for choosing $a$ or $b$. Here we explore what happens if that criterion is growth rate maximization. A growth rate, $g$, is defined as the scale parameter of time for an underlying dynamic of wealth. Wealth dynamics can take different forms. Ignoring payments $\Dx_a$ and $\Dx_b$, a standard assumption is that wealth grows exponentially in time at rate $r$. We label this dynamic as multiplicative. It corresponds to investing wealth in income-generating assets, where the income is proportional to the amount invested. In this case wealth follows
 
 \be
-x\left(t\right) = x\left(0\right) e^{r t}\,.
+x\left(t\right) = x\left(0\right) e^{r t}\,,
 \ee
+and the scale parameter of time is $g=r$.
 
-Another possible form is additive dynamics. Under this dynamic wealth grows linearly in time, at a rate $k$, and it is not invested in income-generating assets. It is equivalent to assuming a flow of wealth at some rate, \eg labor income. In this case wealth follows
+Another possibility is additive dynamics, where wealth grows linearly in time, at a rate $k$. It corresponds to something like labor income, namely to situations where investment income is negligible, and wealth instead changes by a net flow that does not depend on wealth itself. In this case wealth follows
 
 \be
-x\left(t\right) = k t + x\left(0\right)\,.
+x\left(t\right) = k t + x\left(0\right)\,,
 \ee
+and the scale parameter of time is $g=k$.
 
-The definition of the growth rate differs between the dynamics. The growth rate between time $t+\Dt$ and $t$ under additive dynamics is $k = \frac{x\left(t+\Dt\right)-x\left(t\right)}{\Dt}$ and under multiplicative dynamics it is $r = \frac{\log x(t+\Dt)-\log x(t)}{\Dt}$. This can be generalized to other possible wealth dynamics~\citep{peters2016evaluating,peters2018time}.
+The functional form of the growth rate differs between the dynamics. The growth rate between time $t+\Dt$ and $t$ under multiplicative dynamics it is $r = \frac{\log x(t+\Dt)-\log x(t)}{\Dt}$ and under additive dynamics is $k = \frac{x\left(t+\Dt\right)-x\left(t\right)}{\Dt}$. This can be generalized to other possible wealth dynamics~\citep{peters2016evaluating,peters2018time}.
 
-Now, given a specific wealth dynamic, a CIPP will be characterized by two growth rates -- $g_a$, associated with choice $a$; $g_b$, associated with choice $b$. This allows formulating a single axiom:
+Now, given a specific wealth dynamic, a CIPP implies two growth rates -- $g_a$, associated with choice $a$; $g_b$, associated with choice $b$. This allows formulating a single axiom:
 
 \begin{axiom}{The Optimization of Growth}
 
-Given time $t_0$, an initial wealth $x\left(t_0\right)$, and tuples $\left(t_a,\Dx_a\right)$ and $\left(t_b,\Dx_b\right)$, such that the vector $\{t_0,x\left(t_0\right),t_a,\Dx_a,t_b,\Dx_b\}$ is a CIPP:
+Given a wealth dynamic, time $t_0$, an initial wealth $x\left(t_0\right)$, and tuples $\left(t_a,\Dx_a\right)$ and $\left(t_b,\Dx_b\right)$, such that the vector $\{t_0,x\left(t_0\right),t_a,\Dx_a,t_b,\Dx_b\}$ is a CIPP:
 
 \begin{enumerate}
 \item $\left(t_a,\Dx_a\right) \succ \left(t_b,\Dx_b\right)$ if and only if $g_a > g_b$
@@ -294,8 +299,8 @@ Under the notation of~\Aref{ax1}, the Transitivity axiom is satisfied.
 
 \subsection{Setup}
 
-We will confine our attention to the case $\Dx_b>\Dx_a$ because a larger and earlier payout is trivially always preferred. Note that the definition of CIPP is under the assumption that the decision maker knows his net wealth at time $t_0$, denoted by $x\left(t_0\right)$. In general, $x\left(t\right)$ denotes the net wealth of the decision maker at time $t$. This setup is illustrated in~\fref{basicsetup}. We note again that in this setup there is no uncertainty in the payouts or in the times in which they are realized. Thus, there is no risk.
-%Because there is no risk, we do not specify a utility function and consider the dollar value of the payouts.
+In a CIPP, $\Dx_b>\Dx_a$ because a larger and earlier payment is trivially always preferred. This setup is illustrated in~\fref{basicsetup}. We note again that in this setup there is no uncertainty in the payoffs or in the times in which they are realized. Thus, there is no risk.
+%Because there is no risk, we do not specify a utility function and consider the dollar value of the payoffs.
 
 \begin{figure}[!htb]
 \centering
@@ -359,7 +364,7 @@ In our model, we must choose the time period over which the growth rates of weal
 
 %One possibility is to assume a fixed time frame -- the decision maker faces the choice every $\Dt_b$. In this case, in order to compare between the two choices, we will evaluate the growth rates between $t_0$ and $\Dt_b$ in both options. Another possible specification of time frame, is that the decision maker faces a choice after the payout is exercised, \ie after $\Dt_a$ if option $a$ was chosen and after $\Dt_b$ if option $b$ was chosen. In this case, we will evaluate the growth rate for option $a$ at time $\Dt_a$, and for option $b$ at $\Dt_b$. The former time frame will be labeled the fixed time frame and the latter the elastic time frame.
 
-As described in~\Sref{model}, the wealth dynamics can also take different forms, and we will address two specific common cases: additive and multiplicative wealth dynamics. We note that under the multiplicative dynamics it is assumed that the payout itself is re-invested at the risk-free rate. For additive dynamics there is essentially no re-investment of the payout -- the income generated by this dynamic is not proportional to wealth as in the multiplicative dynamics.
+As described in~\Sref{model}, the wealth dynamics can also take different forms, and we will address two specific common cases: additive and multiplicative wealth dynamics. We note that under the multiplicative dynamics it is assumed that the payout itself is re-invested at the risk-free rate. For additive dynamics there is essentially no re-investment of the payout -- income in this dynamic is independent of wealth.
 
 We will discuss the four specifications, as illustrated in~\fref{tree}. In each case we will: compute the growth rates $g_a$ and $g_b$ associated with each option; compare them to determine the conditions under which each option is preferred; elicit the form of temporal discounting equivalent to our decision model; and, finally, determine whether PR is predicted.
 
@@ -393,7 +398,7 @@ It follows that the criterion $g_a > g_b$ is
 
 This criterion suggests that, under this specification, the only thing that matters to the decision maker is the linear payout rate of each option.
 
-If we treat the payout amounts, $\Dx_a$ and $\Dx_b$, and payout times, $t_a$ and $t_b$, as fixed parameters of the problem, then we can elicit the dependence of the decision on the decision time, $t_0$. When the payouts are far ahead in the future, \ie as $t_0\to-\infty$, the denominators in the growth rates approach each other and $g_a<g_b$ since we have assumed $\Dx_a<\Dx_b$. When the earlier payout is imminent, \ie as $t_0\to t_a$, $g_a$ grows without bound while $g_b$ remains finite and so $g_a>g_b$. In other words, as time passes, our decision model under this specification predicts preference reversal from the later, larger payout to the earlier, smaller payout. This is illustrated in~\fref{caseA}.
+If we treat the payment amounts, $\Dx_a$ and $\Dx_b$, and payment times, $t_a$ and $t_b$, as fixed parameters of the problem, then we can elicit the dependence of the decision on the decision time, $t_0$. When the payments are far ahead in the future, the ratio of the growth rates approaches $\lim_{t_0\to-\infty}\frac{g_a}{g_b}=\frac{\Dx_a}{\Dx_b}$, and $g_a<g_b$ since we have assumed $\Dx_a<\Dx_b$. When the earlier payment is imminent, \ie as $t_0\to t_a$, $g_a$ grows without bound while $g_b$ remains finite and so $g_a>g_b$. In other words, as time passes, our decision model under this specification predicts preference reversal from the later, larger payment to the earlier, smaller payment. This is illustrated in~\fref{caseA}.
 
 \begin{figure}[!htb]
 \centering
@@ -583,7 +588,9 @@ The main finding is that discounting can be interpreted as growth rate optimizat
 
 This paper discusses discounting from a theoretical perspective. An important complementary step of this research would be comparing the theoretical predictions of the results to empirical and experimental results. In particular, the predicted discount factors and discount rates can be compared to results from controlled experiments. This is planned for future work.
 
-An additional extension is the inclusion of risk. The standard explanations to hyperbolic discounting consist of a behavioral response to risk~\citep{sozou1998hyperbolic,dasgupta2005uncertainty}, while here we showed that hyperbolic discounting can be observed even in the absence of uncertainties in the payouts or in their timing. Adding uncertainty to our model might create additional forms of temporal discounting, which might be more realistic and closer to empirical evidence.
+%An additional extension is the inclusion of risk. The standard explanations to hyperbolic discounting consist of a behavioral response to risk~\citep{sozou1998hyperbolic,dasgupta2005uncertainty}, while here we showed that hyperbolic discounting can be observed even in the absence of uncertainties in the payouts or in their timing. Adding uncertainty to our model might create additional forms of temporal discounting, which might be more realistic and closer to empirical evidence.
+%XXXOP: we have already done the random case. That's what we usually do. Ergodic growth rate optimization includes randomness, it's just interesting that even without randomness, i.e. just discounting, we also recover a lot of known results.
+
 
 %\textcolor{green}{Given the framework here, risk can be interpreted in two ways. Either it represents the actual probability of an arrival of a choice or it represents the belief about the environment. The corresponding discount rate then be some weighted average between the discount rates presented here. }
 

@@ -3,44 +3,47 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: aea.bst
 Database file #1: discountingbib.bib
+Warning--I didn't find a database entry for "MederETAL2019"
+Warning--empty note in epper2018time
 You've used 18 entries,
             2695 wiz_defined-function locations,
-            698 strings with 6378 characters,
-and the built_in function-call counts, 89064 in all, are:
-= -- 14725
-> -- 1008
+            698 strings with 6383 characters,
+and the built_in function-call counts, 92136 in all, are:
+= -- 15269
+> -- 1029
 < -- 0
-+ -- 7050
-- -- 312
-* -- 7934
-:= -- 17633
-add.period$ -- 125
++ -- 7327
+- -- 319
+* -- 8221
+:= -- 18194
+add.period$ -- 124
 call.type$ -- 18
 change.case$ -- 234
 chr.to.int$ -- 18
-cite$ -- 18
+cite$ -- 19
 duplicate$ -- 262
 empty$ -- 699
-format.name$ -- 315
-if$ -- 15919
+format.name$ -- 322
+if$ -- 16477
 int.to.chr$ -- 5
 int.to.str$ -- 0
 missing$ -- 0
 newline$ -- 61
 num.names$ -- 198
-pop$ -- 19
+pop$ -- 20
 preamble$ -- 1
 purify$ -- 270
 quote$ -- 0
-skip$ -- 213
+skip$ -- 212
 stack$ -- 0
-substring$ -- 21054
+substring$ -- 21864
 swap$ -- 104
 text.length$ -- 252
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 70
-warning$ -- 0
+warning$ -- 1
 while$ -- 455
 width$ -- 0
-write$ -- 92
+write$ -- 91
+(There were 2 warnings)

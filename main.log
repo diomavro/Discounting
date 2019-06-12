@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.8.23)  30 MAY 2019 10:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.8.23)  8 JUN 2019 17:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -861,54 +861,56 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 Package hyperref Info: Option `colorlinks' set `true' on input line 62.
 \c@theorem=\count165
 \c@proposition=\count166
-\c@hyp=\count167
-\c@subhyp=\count168
+\c@definition=\count167
+\c@axiom=\count168
+\c@hyp=\count169
+\c@subhyp=\count170
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count169
+\scratchcounter=\count171
 \scratchdimen=\dimen279
 \scratchbox=\box53
-\nofMPsegments=\count170
-\nofMParguments=\count171
+\nofMPsegments=\count172
+\nofMParguments=\count173
 \everyMPshowfont=\toks43
-\MPscratchCnt=\count172
+\MPscratchCnt=\count174
 \MPscratchDim=\dimen280
-\MPnumerator=\count173
-\makeMPintoPDFobject=\count174
+\MPnumerator=\count175
+\makeMPintoPDFobject=\count176
 \everyMPtoPDFconversion=\toks44
 )
-\c@lstlisting=\count175
+\c@lstlisting=\count177
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring ON on input line 173.
+Package hyperref Info: Link coloring ON on input line 176.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count176
+\c@section@level=\count178
 )
-LaTeX Info: Redefining \ref on input line 173.
-LaTeX Info: Redefining \pageref on input line 173.
-LaTeX Info: Redefining \nameref on input line 173.
+LaTeX Info: Redefining \ref on input line 176.
+LaTeX Info: Redefining \pageref on input line 176.
+LaTeX Info: Redefining \nameref on input line 176.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
@@ -923,15 +925,15 @@ LaTeX Info: Redefining \nameref on input line 173.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(108.405pt, 397.485pt, 108.405pt)
-* v-part:(T,H,B)=(108.405pt, 578.15999pt, 108.405pt)
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=397.485pt
-* \textheight=578.15999pt
-* \oddsidemargin=36.13501pt
-* \evensidemargin=36.13501pt
-* \topmargin=-0.86499pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -952,40 +954,44 @@ LaTeX Info: Redefining \nameref on input line 173.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 184.
+LaTeX Font Info:    Try loading font information for U+msa on input line 187.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 184.
+LaTeX Font Info:    Try loading font information for U+msb on input line 187.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 184.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 187.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 185--191
+Underfull \hbox (badness 10000) in paragraph at lines 188--195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--191
+Underfull \hbox (badness 10000) in paragraph at lines 188--195
 
  []
 
 [0
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[1] [2] <./figures/setup.pdf, id=145, 445.36389pt x 258.79121pt>
+
+Package natbib Warning: Citation `MederETAL2019' on page 1 undefined on input l
+ine 220.
+
+[1] [2] [3] <./figures/setup.pdf, id=167, 445.36389pt x 258.79121pt>
 File: ./figures/setup.pdf Graphic file (type pdf)
 
 <use ./figures/setup.pdf>
-Package pdftex.def Info: ./figures/setup.pdf used on input line 243.
-(pdftex.def)             Requested size: 298.11374pt x 173.23125pt.
- [3 <./figures/setup.pdf>] [4] [5]
+Package pdftex.def Info: ./figures/setup.pdf used on input line 307.
+(pdftex.def)             Requested size: 328.82707pt x 191.07997pt.
+ [4] [5 <./figures/setup.pdf>]
 Package epstopdf Info: Source file: <./figures/tree.eps>
 (epstopdf)                    date: 2019-05-15 18:54:53
 (epstopdf)                    size: 22063 bytes
@@ -994,112 +1000,96 @@ Package epstopdf Info: Source file: <./figures/tree.eps>
 (epstopdf)                    size: 5742 bytes
 (epstopdf)             Command: <repstopdf --outfile=./tree-eps-converted-to.pd
 f ./figures/tree.eps>
-(epstopdf)             \includegraphics on input line 322.
+(epstopdf)             \includegraphics on input line 373.
 Package epstopdf Info: Output file is already uptodate.
 
-<./tree-eps-converted-to.pdf, id=193, 294.09875pt x 146.5475pt>
+<./tree-eps-converted-to.pdf, id=208, 294.09875pt x 146.5475pt>
 File: ./tree-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./tree-eps-converted-to.pdf>
-Package pdftex.def Info: ./tree-eps-converted-to.pdf used on input line 322.
-(pdftex.def)             Requested size: 298.11374pt x 148.54845pt.
+Package pdftex.def Info: ./tree-eps-converted-to.pdf used on input line 373.
+(pdftex.def)             Requested size: 328.82707pt x 163.85254pt.
  [6] [7 <./tree-eps-converted-to.pdf>]
-<./figures/reversal_1.pdf, id=214, 445.36389pt x 263.32378pt>
-File: ./figures/reversal_1.pdf Graphic file (type pdf)
+Package epstopdf Info: Source file: <./figures/reversals.eps>
+(epstopdf)                    date: 2019-06-08 09:49:56
+(epstopdf)                    size: 25047 bytes
+(epstopdf)             Output file: <./reversals-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-06-08 10:13:22
+(epstopdf)                    size: 9957 bytes
+(epstopdf)             Command: <repstopdf --outfile=./reversals-eps-converted-
+to.pdf ./figures/reversals.eps>
+(epstopdf)             \includegraphics on input line 405.
+Package epstopdf Info: Output file is already uptodate.
 
-<use ./figures/reversal_1.pdf>
-Package pdftex.def Info: ./figures/reversal_1.pdf used on input line 355.
-(pdftex.def)             Requested size: 155.0189pt x 91.6544pt.
+<./reversals-eps-converted-to.pdf, id=231, 873.2625pt x 259.97125pt>
+File: ./reversals-eps-converted-to.pdf Graphic file (type pdf)
 
-<./figures/reversal_2.pdf, id=215, 445.36389pt x 263.32378pt>
-File: ./figures/reversal_2.pdf Graphic file (type pdf)
+<use ./reversals-eps-converted-to.pdf>
+Package pdftex.def Info: ./reversals-eps-converted-to.pdf used on input line 40
+5.
+(pdftex.def)             Requested size: 469.75502pt x 139.84685pt.
+ [8 <./reversals-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./figures/reversals_B.eps>
+(epstopdf)                    date: 2019-06-08 09:49:56
+(epstopdf)                    size: 26343 bytes
+(epstopdf)             Output file: <./reversals_B-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-06-08 10:13:23
+(epstopdf)                    size: 9339 bytes
+(epstopdf)             Command: <repstopdf --outfile=./reversals_B-eps-converte
+d-to.pdf ./figures/reversals_B.eps>
+(epstopdf)             \includegraphics on input line 503.
+Package epstopdf Info: Output file is already uptodate.
 
-<use ./figures/reversal_2.pdf>
-Package pdftex.def Info: ./figures/reversal_2.pdf used on input line 356.
-(pdftex.def)             Requested size: 155.0189pt x 91.6544pt.
+<./reversals_B-eps-converted-to.pdf, id=268, 987.69pt x 304.13625pt>
+File: ./reversals_B-eps-converted-to.pdf Graphic file (type pdf)
 
-<./figures/reversal_3.pdf, id=216, 445.36389pt x 263.32378pt>
-File: ./figures/reversal_3.pdf Graphic file (type pdf)
-
-<use ./figures/reversal_3.pdf>
-Package pdftex.def Info: ./figures/reversal_3.pdf used on input line 357.
-(pdftex.def)             Requested size: 155.0189pt x 91.6544pt.
-
-Overfull \hbox (22.515pt too wide) in paragraph at lines 358--361
- [][] 
- []
-
-[8 <./figures/reversal_1.pdf> <./figures/reversal_2.pdf
-
-pdfTeX warning: pdflatex (file ./figures/reversal_2.pdf): PDF inclusion: multip
-le pdfs with page group included in a single page
-> <./figures/reversal_3.pdf
-
-pdfTeX warning: pdflatex (file ./figures/reversal_3.pdf): PDF inclusion: multip
-le pdfs with page group included in a single page
->] [9] <./figures/reversal_B_1.pdf, id=305, 468.45013pt x 258.79121pt>
-File: ./figures/reversal_B_1.pdf Graphic file (type pdf)
-
-<use ./figures/reversal_B_1.pdf>
-Package pdftex.def Info: ./figures/reversal_B_1.pdf used on input line 445.
-(pdftex.def)             Requested size: 155.0189pt x 85.63829pt.
-
-<./figures/reversal_B_2.pdf, id=306, 468.45013pt x 258.79121pt>
-File: ./figures/reversal_B_2.pdf Graphic file (type pdf)
-
-<use ./figures/reversal_B_2.pdf>
-Package pdftex.def Info: ./figures/reversal_B_2.pdf used on input line 446.
-(pdftex.def)             Requested size: 155.0189pt x 85.63829pt.
-
-<./figures/reversal_B_3.pdf, id=307, 468.45013pt x 258.79121pt>
-File: ./figures/reversal_B_3.pdf Graphic file (type pdf)
-
-<use ./figures/reversal_B_3.pdf>
-Package pdftex.def Info: ./figures/reversal_B_3.pdf used on input line 447.
-(pdftex.def)             Requested size: 155.0189pt x 85.63829pt.
-
-Overfull \hbox (22.515pt too wide) in paragraph at lines 448--451
- [][] 
- []
-
-<./figures/ga_gb.pdf, id=315, 453.42525pt x 281.45401pt>
+<use ./reversals_B-eps-converted-to.pdf>
+Package pdftex.def Info: ./reversals_B-eps-converted-to.pdf used on input line 
+503.
+(pdftex.def)             Requested size: 469.75502pt x 144.6472pt.
+ [9]
+<./figures/ga_gb.pdf, id=289, 453.42525pt x 281.45401pt>
 File: ./figures/ga_gb.pdf Graphic file (type pdf)
 
 <use ./figures/ga_gb.pdf>
-Package pdftex.def Info: ./figures/ga_gb.pdf used on input line 459.
-(pdftex.def)             Requested size: 298.11374pt x 185.05159pt.
- [10 <./figures/reversal_B_1.pdf> <./figures/reversal_B_2.pdf
-
-pdfTeX warning: pdflatex (file ./figures/reversal_B_2.pdf): PDF inclusion: mult
-iple pdfs with page group included in a single page
-> <./figures/reversal_B_3.pdf
-
-pdfTeX warning: pdflatex (file ./figures/reversal_B_3.pdf): PDF inclusion: mult
-iple pdfs with page group included in a single page
->] [11 <./figures/ga_gb.pdf>] [12] [13] [14] (./main.bbl
-Underfull \hbox (badness 2717) in paragraph at lines 51--54
-[]\OT1/cmr/bx/n/10.95 Meder, David, Finn Rabe, To-bias Morville, Kristof-fer Ma
-d-sen,
+Package pdftex.def Info: ./figures/ga_gb.pdf used on input line 525.
+(pdftex.def)             Requested size: 328.82707pt x 204.11978pt.
+ [10 <./reversals_B-eps-converted-to.pdf> <./figures/ga_gb.pdf>] [11] [12] (./m
+ain.bbl [13]) [14]
+Overfull \hbox (11.93475pt too wide) in paragraph at lines 626--627
+[]\OT1/cmr/m/n/10.95 If $\OML/cmm/m/it/10.95 A \OMS/cmsy/m/n/10.95 ^^^ \OML/cmm
+/m/it/10.95 B$ \OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 B \OMS/cmsy/m/n/10.9
+5 ^^^ \OML/cmm/m/it/10.95 C$ \OT1/cmr/m/n/10.95 then $\OML/cmm/m/it/10.95 g[] <
+ g[]$ \OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 g[] < g[]$\OT1/cmr/m/n/10.95 
+. Also $\OML/cmm/m/it/10.95 t[] < t[] < t[]$\OT1/cmr/m/n/10.95 . There-fore $\O
+MS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 t[]; x [] ; t[]; \OT1/cmr/m/n/10.95 ^^A\
+OML/cmm/m/it/10.95 x[]; t[]; \OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.95 x[]\OMS/
+cmsy/m/n/10.95 g$
  []
 
-[15]) [16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 549.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
+
+Package natbib Warning: There were undefined citations.
+
+[15
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 629.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 629.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 549.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 629.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 629.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D308D0D097026DF272382D6DA259C27B;797.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 549.
+(rerunfilecheck)             Checksum: C8266864FC76A8D3C1681CFAD9333F1C;891.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 629.
  ) 
 Here is how much of TeX's memory you used:
- 20899 strings out of 493014
- 378203 string characters out of 6133351
- 459908 words of memory out of 5000000
- 23937 multiletter control sequences out of 15000+600000
+ 20909 strings out of 493014
+ 377988 string characters out of 6133351
+ 462158 words of memory out of 5000000
+ 23942 multiletter control sequences out of 15000+600000
  15290 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,62p,1101b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,62p,1092b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1119,11 +1109,12 @@ ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (17 pages, 279995 bytes).
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (16 pages, 283562 bytes).
 PDF statistics:
- 532 PDF objects out of 1000 (max. 8388607)
- 377 compressed objects within 4 object streams
- 74 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 460 PDF objects out of 1000 (max. 8388607)
+ 349 compressed objects within 4 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
